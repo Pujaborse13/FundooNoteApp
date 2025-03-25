@@ -1,0 +1,16 @@
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.json
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.dev.json
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+D:\AcessMeditech\FundooNotesApp\RepositoryLayer\obj\Debug\netcoreapp3.1\Reposito.A0A61804.Up2Date
