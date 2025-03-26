@@ -16,3 +16,4 @@ D:\AcessMeditech\FundooNotesApp\ManagerLayer\bin\Debug\netcoreapp3.1\RepositoryL
 D:\AcessMeditech\FundooNotesApp\ManagerLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
 D:\AcessMeditech\FundooNotesApp\ManagerLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
 D:\AcessMeditech\FundooNotesApp\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerL.73C23B7D.Up2Date
+D:\AcessMeditech\FundooNotesApp\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.sourcelink.json

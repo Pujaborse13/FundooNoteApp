@@ -9,6 +9,7 @@ using RepositoryLayer.Interface;
 
 namespace RepositoryLayer.Service
 {
+
     public class UserRepo : IUserRepo
     {
         private readonly FundooDBContext context;
@@ -26,8 +27,7 @@ namespace RepositoryLayer.Service
             user.DOB = model.DOB;
             user.Gender = model.Gender;
             user.Email = model.Email;
-
-            user.Password = EncodePasswordToBase6(model.Password);
+            user.Password = EncodePasswordToBase64(model.Password);
             this.context.Users.Add(user);
             context.SaveChanges();
             return user;
@@ -40,17 +40,18 @@ namespace RepositoryLayer.Service
             var result = this.context.Users.FirstOrDefault(x => x.Email == email);
             if (result == null)
             {
-                return true;
+                return false;
             }
 
-            return false;
+            return true;
         }
 
 
-        private string EncodePasswordToBase6(string password)
+        private string EncodePasswordToBase64(string password)
         {
             try
             {
+               
                 byte[] encData_byte = new byte[password.Length];
                 encData_byte = System.Text.Encoding.UTF8.GetBytes(password);
                 string encodedData = Convert.ToBase64String(encData_byte);
@@ -66,6 +67,22 @@ namespace RepositoryLayer.Service
 
 
         }
-    
+
+
+
+        public UserEntity Login(LoginModel model)
+        {
+            var user = context.Users.FirstOrDefault(x => x.Email == model.Email);
+            if (user != null)
+            {
+                var  decodedPassword = EncodePasswordToBase64(user.Password);
+
+                if (decodedPassword != null)
+                {
+                    return user;
+                }
+            }
+            return null;
+        }
     }
 }

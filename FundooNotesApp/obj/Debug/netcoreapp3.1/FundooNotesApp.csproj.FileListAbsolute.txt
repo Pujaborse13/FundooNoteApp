@@ -49,3 +49,4 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\CommonLay
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\ManagerLayer.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\ManagerLayer.pdb
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\obj\Debug\netcoreapp3.1\FundooNotesApp.sourcelink.json

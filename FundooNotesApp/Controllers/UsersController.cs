@@ -34,10 +34,10 @@ namespace FundooNotesApp.Controllers
                 var result = userManager.Register(model);
                 if (result != null)
                 {
-                     return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Regisetr Sucsessfully", Data = result });
+                     return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Register Sucsessfully", Data = result });
     
                 }
-                 return BadRequest(new ResponseModel<UserEntity> { Success = false, Message = "Regisetr Fail", Data = result });
+                 return BadRequest(new ResponseModel<UserEntity> { Success = false, Message = "Register Fail", Data = result });
 
 
             }
@@ -45,6 +45,24 @@ namespace FundooNotesApp.Controllers
 
         }
 
-        
+
+        [HttpPost]
+        [Route("Login")]
+        public IActionResult Login(LoginModel model)
+        {
+            var user = userManager.Login(model);
+            if (user != null)
+            {
+                return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Login Successful", Data = user });
+            }
+            return Unauthorized(new ResponseModel<UserEntity> { Success = false, Message = "Invalid Email or Password" });
+        }
+
+
+
+
+
+
+
     }
 }
