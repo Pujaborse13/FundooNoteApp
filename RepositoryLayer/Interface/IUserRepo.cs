@@ -12,6 +12,8 @@ namespace RepositoryLayer.Interface
         public bool CheckEmail(string mail);
         public string Login(LoginModel model);
 
+        public ForgotPasswordModel ForgotPassword(string Email);
+
 
     }
 }

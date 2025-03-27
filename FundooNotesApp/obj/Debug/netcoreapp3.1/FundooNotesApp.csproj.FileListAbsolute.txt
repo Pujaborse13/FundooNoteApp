@@ -63,3 +63,13 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Automatonymous.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\GreenPipes.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\MassTransit.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NewId.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll

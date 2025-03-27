@@ -115,6 +115,18 @@ namespace RepositoryLayer.Service
 
 
 
+        public ForgotPasswordModel ForgotPassword(string Email)
+        { 
+            UserEntity user = context.Users.ToList().Find(user => user.Email == Email);
+            ForgotPasswordModel forgotPassword = new ForgotPasswordModel();
+            forgotPassword.Email = user.Email;
+            forgotPassword.UserID= user.UserId;
+            forgotPassword.Token = GenerateToken(user.Email, user.UserId);
+
+            return forgotPassword;
+
+        
+        }
 
 
 

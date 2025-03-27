@@ -34,5 +34,14 @@ namespace ManagerLayer.Service
         {
             return userRepo.Login(model);
         }
+
+
+
+        public ForgotPasswordModel ForgotPassword(string Email)
+        {
+
+            return userRepo.ForgotPassword(Email);
+        }
+
     }
 }
