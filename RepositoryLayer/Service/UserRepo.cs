@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using CommonLayer.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
+using RepositoryLayer.Migrations;
 
 namespace RepositoryLayer.Service
 {
@@ -13,10 +18,13 @@ namespace RepositoryLayer.Service
     public class UserRepo : IUserRepo
     {
         private readonly FundooDBContext context;
+        private readonly IConfiguration configuration;
 
-        public UserRepo(FundooDBContext context)
+        public UserRepo(FundooDBContext context, IConfiguration configuration)
         {
             this.context = context;
+            this.configuration = configuration;
+
         }
 
         public UserEntity Register(RegisterModel model)
@@ -70,19 +78,45 @@ namespace RepositoryLayer.Service
 
 
 
-        public UserEntity Login(LoginModel model)
+        public string Login(LoginModel model)
         {
-            var user = context.Users.FirstOrDefault(x => x.Email == model.Email);
-            if (user != null)
+            var checkUser = context.Users.FirstOrDefault(x => x.Email == model.Email && x.Password == EncodePasswordToBase64(model.Password));
+            if (checkUser != null)
             {
-                var  decodedPassword = EncodePasswordToBase64(user.Password);
-
-                if (decodedPassword != null)
-                {
-                    return user;
-                }
+                var token = GenerateToken(checkUser.Email, checkUser.UserId);
+                return token;
             }
             return null;
         }
+
+
+
+        // To generate token
+        private string GenerateToken(string email , int userId)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+                new Claim("EmailID",email),
+                new Claim("UserID",userId.ToString())
+
+            };
+            var token = new JwtSecurityToken(configuration["Jwt:Issuer"],
+                configuration["Jwt:Audience"],
+                claims,
+                expires: DateTime.Now.AddHours(2),
+                signingCredentials: credentials);
+
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+
+        }
+
+
+
+
+
+
     }
 }

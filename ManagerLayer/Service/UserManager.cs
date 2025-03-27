@@ -30,7 +30,7 @@ namespace ManagerLayer.Service
             return userRepo.CheckEmail(email);
         }
 
-        public UserEntity Login(LoginModel model)
+        public string Login(LoginModel model)
         {
             return userRepo.Login(model);
         }

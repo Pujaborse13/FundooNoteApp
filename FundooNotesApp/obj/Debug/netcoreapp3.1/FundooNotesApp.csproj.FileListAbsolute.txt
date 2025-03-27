@@ -50,3 +50,16 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\ManagerLa
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\ManagerLayer.pdb
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\CommonLayer.pdb
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\obj\Debug\netcoreapp3.1\FundooNotesApp.sourcelink.json
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\obj\Debug\netcoreapp3.1\FundooNotesApp.MvcApplicationPartsAssemblyInfo.cs
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

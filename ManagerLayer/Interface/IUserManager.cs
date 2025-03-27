@@ -12,7 +12,7 @@ namespace ManagerLayer.Interface
 
         public bool CheckEmail(string email);
 
-        public UserEntity Login(LoginModel model);
+        public string Login(LoginModel model);
 
     }
 }

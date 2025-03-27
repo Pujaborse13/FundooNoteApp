@@ -36,10 +36,7 @@ namespace FundooNotesApp
             services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
             services.AddTransient<IUserRepo , UserRepo>();
             services.AddTransient<IUserManager, UserManager>();
-
-
-
-
+            services.AddSwaggerGen();
 
             //IServiceCollection serviceCollection = services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
 
@@ -55,6 +52,13 @@ namespace FundooNotesApp
             }
 
             app.UseHttpsRedirection();
+            app.UseSwagger();
+
+            // This middleware serves the Swagger documentation UI
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee API V1");
+            });
 
             app.UseRouting();
 

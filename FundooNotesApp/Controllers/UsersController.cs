@@ -53,9 +53,9 @@ namespace FundooNotesApp.Controllers
             var user = userManager.Login(model);
             if (user != null)
             {
-                return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Login Successful", Data = user });
+                return Ok(new ResponseModel<string> { Success = true, Message = "Login Successful", Data = user });
             }
-            return Unauthorized(new ResponseModel<UserEntity> { Success = false, Message = "Invalid Email or Password" });
+            return BadRequest(new ResponseModel<string> { Success = false, Message = "Invalid Email or Password" });
         }
 
 
