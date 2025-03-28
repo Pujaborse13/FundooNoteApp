@@ -14,7 +14,6 @@ using RepositoryLayer.Migrations;
 
 namespace RepositoryLayer.Service
 {
-
     public class UserRepo : IUserRepo
     {
         private readonly FundooDBContext context;
@@ -23,7 +22,7 @@ namespace RepositoryLayer.Service
         public UserRepo(FundooDBContext context, IConfiguration configuration)
         {
             this.context = context;
-            this.configuration = configuration;
+            this.configuration = configuration;  //Injects IConfiguration (to access settings like JWT keys from appsettings.json).
 
         }
 
@@ -35,7 +34,8 @@ namespace RepositoryLayer.Service
             user.DOB = model.DOB;
             user.Gender = model.Gender;
             user.Email = model.Email;
-            user.Password = EncodePasswordToBase64(model.Password);
+            user.Password = EncodePasswordToBase64(model.Password); //Encoding the password into Base64 format for storage
+            
             this.context.Users.Add(user);
             context.SaveChanges();
             return user;
@@ -44,7 +44,6 @@ namespace RepositoryLayer.Service
 
         public bool CheckEmail(string email)
         {
-
             var result = this.context.Users.FirstOrDefault(x => x.Email == email);
             if (result == null)
             {
@@ -58,17 +57,14 @@ namespace RepositoryLayer.Service
         private string EncodePasswordToBase64(string password)
         {
             try
-            {
-               
+            {  
                 byte[] encData_byte = new byte[password.Length];
                 encData_byte = System.Text.Encoding.UTF8.GetBytes(password);
                 string encodedData = Convert.ToBase64String(encData_byte);
                 return encodedData;
-
             }
             catch (Exception ex)
             {
-
                 throw new Exception("Error in base64Encode" + ex.Message);
 
             }
@@ -108,7 +104,6 @@ namespace RepositoryLayer.Service
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: credentials);
 
-
             return new JwtSecurityTokenHandler().WriteToken(token);
 
         }
@@ -128,6 +123,28 @@ namespace RepositoryLayer.Service
         
         }
 
+
+
+        public bool ResetPassword(string Email, ResetPasswordModel resetPasswordModel)
+        {
+            UserEntity User = context.Users.ToList().Find(user => user.Email == Email);
+
+            if (CheckEmail(User.Email))
+            {
+
+                User.Password = EncodePasswordToBase64(resetPasswordModel.ConfirmPassword);
+                //User.ChangedAt = DateTime.Now;
+                context.SaveChanges();
+                return true;
+            }
+
+            else
+            {
+                return false;
+
+            }
+
+        }
 
 
     }

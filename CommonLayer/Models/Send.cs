@@ -24,7 +24,7 @@ namespace CommonLayer.Models
             //<p>Your Password Reset token : <strong>{Token}</strong></p>
             //<p>Click Below Link To Rest Your Password :</p>
             //<p><a.href='{restUrl}'> {resetUrl}</a></p>;   
-            Message.Subject = "Token Generated for Forgot Password";
+            Message.Subject = "Token Generated For Forgot Password ";
             Message.Body = MailBody.ToString();
             Message.BodyEncoding = Encoding.UTF8;
             Message.IsBodyHtml = true;

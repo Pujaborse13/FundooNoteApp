@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using ManagerLayer.Interface;
 using ManagerLayer.Service;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +18,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
@@ -37,9 +42,42 @@ namespace FundooNotesApp
             services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
             services.AddTransient<IUserRepo , UserRepo>();
             services.AddTransient<IUserManager, UserManager>();
-            services.AddSwaggerGen();
 
+            services.AddSwaggerGen(
+                option =>
+                {
+                    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Fundo API", Version = "v1" });
+                    option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                    {
+                        In = ParameterLocation.Header,
+                        Description = "Please enter the valid token",
+                        Name = "Authorization",
+                        Type = SecuritySchemeType.Http,
+                        BearerFormat = "JWT",
+                        Scheme = "Bearer"
 
+                    });
+
+                    option.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
+                      { 
+                          new OpenApiSecurityScheme
+                          {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+
+                           },
+
+                        new string[]{ }
+
+                    }
+                 });
+        });
+                
+              
             services.AddMassTransit(x =>
             {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
@@ -55,8 +93,32 @@ namespace FundooNotesApp
             });
             services.AddMassTransitHostedService();
 
-            //IServiceCollection serviceCollection = services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
 
+
+            services.AddAuthentication(x =>
+
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            }).AddJwtBearer(o =>
+            {
+                var Key = Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]);
+
+                o.SaveToken = true;
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issue"],
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Key)
+
+                };
+            });
+           
         }
 
 
@@ -67,6 +129,7 @@ namespace FundooNotesApp
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseAuthentication();
 
             app.UseHttpsRedirection();
             app.UseSwagger();
@@ -86,5 +149,10 @@ namespace FundooNotesApp
                 endpoints.MapControllers();
             });
         }
+
+
+
+
+
     }
 }

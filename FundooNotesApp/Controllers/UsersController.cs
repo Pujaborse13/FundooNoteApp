@@ -3,11 +3,13 @@ using System.Threading.Tasks;
 using CommonLayer.Models;
 using ManagerLayer.Interface;
 using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 using RepositoryLayer.Entity;
+using RepositoryLayer.Migrations;
 
 namespace FundooNotesApp.Controllers
 {
@@ -18,12 +20,12 @@ namespace FundooNotesApp.Controllers
 
         private readonly IUserManager userManager;
         private readonly IBus bus;
-        
+
         public UsersController(IUserManager userManager, IBus bus)
         {
             this.userManager = userManager;
             this.bus = bus;
-           
+
         }
 
 
@@ -42,7 +44,7 @@ namespace FundooNotesApp.Controllers
                 var result = userManager.Register(model);
                 if (result != null)
                 {
-                    return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Register Sucsessfully", Data = result });
+                    return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Register Successfully", Data = result });
 
                 }
                 return BadRequest(new ResponseModel<UserEntity> { Success = false, Message = "Register Fail", Data = result });
@@ -103,10 +105,38 @@ namespace FundooNotesApp.Controllers
         }
 
 
+
+        [Authorize]
+        [HttpPost]
+        [Route("ResetPassword")]
+        public ActionResult RestPassword(ResetPasswordModel reset)
+        {
+            try
+            {
+                string Email = User.FindFirst("EmailID").Value;
+                if (userManager.ResetPassword(Email, reset))
+                {
+                    return Ok(new ResponseModel<string> { Success = true, Message = "Password Changed" });
+
+                }
+                else {
+
+                    return BadRequest(new ResponseModel<string> { Success = false, Message = "Password Wrong" });
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
     }
 
 
 }
-        
 
 
