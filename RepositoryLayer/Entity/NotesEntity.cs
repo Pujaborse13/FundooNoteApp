@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 
 namespace RepositoryLayer.Entity
 {
-    public class NoteEntity
+    public class NotesEntity
     {
         [Key]
         [DatabaseGenerated (DatabaseGeneratedOption.Identity)]
