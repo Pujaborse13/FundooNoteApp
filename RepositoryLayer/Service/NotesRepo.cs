@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using CommonLayer.Models;
 using RepositoryLayer.Context;
@@ -36,9 +37,12 @@ namespace RepositoryLayer.Service
         
         
         }
-        
-        
 
+
+        public List<NotesEntity> GetAllNotesByUserId(int UserId)
+        {
+            return context.Notes.Where(note => note.UserId == UserId).ToList();
+        }
 
 
 

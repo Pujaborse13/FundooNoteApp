@@ -13,5 +13,9 @@ namespace RepositoryLayer.Interface
 
         public NotesEntity CreateNote(int UserId, NotesModel notesModel);
 
+        List<NotesEntity> GetAllNotesByUserId(int UserId);
+
+
+
     }
 }

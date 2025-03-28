@@ -25,8 +25,17 @@ namespace ManagerLayer.Service
         {
             return notesRepo.CreateNote(UserId,notesModel);
         
+        }
+
+
+        public List<NotesEntity> GetAllNotesByUserId(int UserId)
+        { 
+            return notesRepo.GetAllNotesByUserId(UserId);
+        
         
         }
+
+
 
     }
 }

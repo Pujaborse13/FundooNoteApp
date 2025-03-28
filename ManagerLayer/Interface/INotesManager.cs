@@ -11,5 +11,9 @@ namespace ManagerLayer.Interface
     {
         public NotesEntity CreateNote(int UserId, NotesModel notesModel);
 
+        public List<NotesEntity> GetAllNotesByUserId(int UserId);
+
+
+
     }
 }
