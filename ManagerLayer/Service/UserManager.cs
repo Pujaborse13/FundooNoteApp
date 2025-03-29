@@ -51,6 +51,64 @@ namespace ManagerLayer.Service
         }
 
 
+        public List<UserEntity> GetAllUsers()
+        {
+
+            return userRepo.GetAllUsers();
+
+        }
+
+
+        public UserEntity GetUserByUserId(int userId)
+        {
+            return userRepo.GetUserByUserId(userId);
+        
+        }
+
+
+        public List<UserEntity> GetUserNameStartWithA()
+        { 
+        
+            return userRepo.GetUserNameStartWithA();
+        }
+
+        public int TotalUserCount()
+        {
+            return userRepo.TotalUserCount();
+        }
+
+        public List<UserEntity> GetUsersByASCOrder()
+        { 
+            return userRepo.GetUsersByASCOrder();
+        
+        
+        }
+
+
+        public List<UserEntity> GetUsersByDESCOrder()
+        {
+            return userRepo.GetUsersByDESCOrder();
+        
+        }
+
+
+        public double GetAverageAgeOfUsers()
+        { 
+            return userRepo.GetAverageAgeOfUsers();
+        
+        }
+
+
+        public object OldestAndYoungestUserAge()
+        {
+            return userRepo.OldestAndYoungestUserAge();
+
+
+        }
+
+
+
+
 
 
     }

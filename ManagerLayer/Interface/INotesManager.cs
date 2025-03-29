@@ -13,7 +13,14 @@ namespace ManagerLayer.Interface
 
         public List<NotesEntity> GetAllNotesByUserId(int UserId);
 
+        public List<NotesEntity> FetchNotes(string title, string description);
+
+        public int GetUserNotesCount(int userId);
 
 
     }
+
+
+
+
 }

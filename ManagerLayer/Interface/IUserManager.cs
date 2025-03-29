@@ -16,6 +16,26 @@ namespace ManagerLayer.Interface
 
         public ForgotPasswordModel ForgotPassword(string Email);
         public bool ResetPassword(string Email, ResetPasswordModel resetPasswordModel);
+        
+        public List<UserEntity> GetAllUsers();
+        public UserEntity GetUserByUserId(int userId);
+
+        public List<UserEntity> GetUserNameStartWithA();
+        public int TotalUserCount();
+
+        public List<UserEntity> GetUsersByASCOrder();
+
+        public List<UserEntity> GetUsersByDESCOrder();
+
+        public double GetAverageAgeOfUsers();
+
+        public object OldestAndYoungestUserAge();
+
+
+
+
+
+
 
 
 

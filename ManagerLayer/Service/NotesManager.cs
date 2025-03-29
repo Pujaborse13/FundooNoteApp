@@ -32,8 +32,22 @@ namespace ManagerLayer.Service
         { 
             return notesRepo.GetAllNotesByUserId(UserId);
         
+         }
+
+
+        public List<NotesEntity> FetchNotes(string title, string description)
+        { 
+            return notesRepo.FetchNotes(title, description);
+        
         
         }
+
+        public int GetUserNotesCount(int userId)
+        { 
+            return notesRepo.GetUserNotesCount(userId);
+        }
+
+
 
 
 

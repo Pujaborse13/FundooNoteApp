@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using CommonLayer.Models;
 using ManagerLayer.Interface;
+using ManagerLayer.Service;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -133,6 +135,173 @@ namespace FundooNotesApp.Controllers
 
 
         }
+
+
+        [HttpGet]
+        [Route("GetAllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            List<UserEntity> userList = userManager.GetAllUsers();
+
+            if (userList != null)
+
+            {
+                return Ok(new { Success = true, Message = "User List Get Successfully", Data = userList });
+            }
+            else
+            {
+                return NotFound(new { Success = false, Message = "Users not found" });
+            }
+
+
+        }
+
+        [HttpGet]
+        [Route("GetUserByUserId")]
+        public IActionResult GetUserByUserId(int userId)
+        {
+
+            UserEntity user = userManager.GetUserByUserId(userId);
+
+            if (user != null)
+            {
+                return Ok(new { Success = true, Message = "User Found Successfully", Data = user });
+
+            }
+            else {
+                return BadRequest(new { Success = false, Message = "User not Found" });
+
+            }
+
+        }
+
+
+        [HttpGet]
+        [Route("GetUserNameStartWithA")]
+        public IActionResult GetUserNameStartWithA()
+        {
+            List<UserEntity> user = userManager.GetUserNameStartWithA();
+
+            if (user != null)
+            {
+                return Ok(new { Success = true, Message = "Users Found SuccessFully with first letter 'A' ", Data = user });
+            }
+            else {
+
+                return BadRequest(new { Success = false, Message = "User Not found with First letter A" });
+            }
+        }
+
+
+        [HttpGet]
+        [Route("TotalUSerCount")]
+        public IActionResult TotalUSerCount()
+        {
+            int userCount = userManager.TotalUserCount();
+
+
+            if (userCount > 0)
+            {
+                return Ok(new { Success = true, Message = "get total users count SuccessFully.", Data = userCount });
+            }
+            else
+            {
+
+                return BadRequest(new { Success = false, Message = "Empty list ! No User Found" });
+            }
+        }
+
+
+
+        [HttpGet]
+        [Route("GetUsersByASCOrder")]
+
+        public IActionResult GetUsersByASCOrder()
+        {
+
+            List<UserEntity> UsersByAsc = userManager.GetUsersByASCOrder();
+
+            if (UsersByAsc != null)
+            {
+                return Ok(new { Success = true, Message = "User Found Successfully", Data = UsersByAsc });
+
+            }
+            else
+            {
+                return BadRequest(new { Success = false, Message = "User not Found" });
+
+            }
+
+        }
+
+
+
+
+        [HttpGet]
+        [Route("GetUsersByDESCOrder")]
+
+        public IActionResult GetUsersByDESCOrder()
+        {
+
+            List<UserEntity> UsersByDESC = userManager.GetUsersByDESCOrder();
+
+            if (UsersByDESC != null)
+            {
+                return Ok(new { Success = true, Message = "User Found Successfully", Data = UsersByDESC });
+
+            }
+            else
+            {
+                return BadRequest(new { Success = false, Message = "User not Found" });
+
+            }
+
+        }
+
+
+
+
+
+        [HttpGet]
+        [Route("GetAverageAgeOfUsers")]
+        public IActionResult GetAverageAgeOfUsers()
+        {
+            double AgeAvgCount = userManager.GetAverageAgeOfUsers();
+
+
+            if (AgeAvgCount > 0)
+            {
+                return Ok(new { Success = true, Message = "Average Age Of Users Calculated Successfully", Data = AgeAvgCount });
+            }
+            else
+            {
+                return BadRequest(new { Success = false, Message = "Fail to calculate Average Age" });
+            }
+        }
+
+
+        [HttpGet]
+        [Route("OldestAndYoungestUserAge")]
+        public IActionResult OldestAndYoungestUserAge()
+        {
+            var OldestYoungestUserAge = userManager.OldestAndYoungestUserAge();
+
+
+            if (OldestYoungestUserAge != null)
+            {
+                return Ok(new { Success = true, Message = "Oldest and youngest user age retrieved successfully.", Data = OldestYoungestUserAge });
+            }
+            else {
+                return BadRequest(new { Success = false, Message = "Fail to get Oldest and Youngest User Age" });
+
+            }
+
+        }
+
+
+
+
+
 
     }
 

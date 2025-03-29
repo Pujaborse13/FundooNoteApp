@@ -39,12 +39,25 @@ namespace RepositoryLayer.Service
         }
 
 
+
         public List<NotesEntity> GetAllNotesByUserId(int UserId)
         {
             return context.Notes.Where(note => note.UserId == UserId).ToList();
         }
 
 
+
+        public List<NotesEntity> FetchNotes(string title, string description)
+        {
+            return context.Notes.Where(note => note.Title.Contains(title) && note.Description.Contains(description)).ToList();
+        }
+
+
+        public int GetUserNotesCount(int userId)
+        { 
+            return context.Notes.Count(note => note.UserId == userId);
+        
+        }
 
     }
 }

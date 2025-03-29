@@ -146,6 +146,83 @@ namespace RepositoryLayer.Service
 
         }
 
+        //---------------------------------------
+        //1.Get all users
+        public List<UserEntity> GetAllUsers()
+        {
+            return context.Users.ToList();
+
+        }
+
+
+        public UserEntity GetUserByUserId(int userId)
+        {
+            return context.Users.FirstOrDefault(user => user.UserId == userId);
+
+        }
+
+
+        public List<UserEntity> GetUserNameStartWithA()
+        { 
+            return context.Users.Where(user => user.FirstName.StartsWith("A")).ToList();        
+        }
+
+
+        public int TotalUserCount() 
+        {
+            return context.Users.Count();
+        }
+
+
+        public List<UserEntity> GetUsersByASCOrder()
+        {
+
+            return context.Users.OrderBy(user => user.FirstName).ToList();
+
+        }
+
+
+
+        public List<UserEntity> GetUsersByDESCOrder()
+        {
+            return context.Users.OrderByDescending(user => user.FirstName).ToList();
+        }
+
+        public double GetAverageAgeOfUsers()
+        {
+           double averageAge = context.Users
+                      .Select(user => DateTime.Now.Year - user.DOB.Year - (DateTime.Now.DayOfYear < user.DOB.DayOfYear ? 1 : 0))
+                      .Average();
+            
+            return averageAge;
+
+
+
+        }
+
+        public object OldestAndYoungestUserAge()
+        {
+            int oldestAge = context.Users
+                .Select(user => DateTime.Now.Year - user.DOB.Year - (DateTime.Now.DayOfYear < user.DOB.DayOfYear ? 1 : 0))
+                .Max();
+
+            int youngestAge = context.Users
+                .Select(user => DateTime.Now.Year - user.DOB.Year - (DateTime.Now.DayOfYear < user.DOB.DayOfYear ? 1 : 0))
+                .Min();
+
+            return new { OldestAge = oldestAge, YoungestAge = youngestAge };
+        }
+
+
+
+
+
+
+    
+
+
+
+
 
     }
 }
