@@ -109,5 +109,62 @@ namespace FundooNotesApp.Controllers
         }
 
 
+        [HttpDelete]
+        [Route("DeleteNote")]
+        public IActionResult DeleteNoteByUserIdAndNoteId(int noteId)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                bool isDeleted = notesManager.DeleteNoteByUserIdAndNoteId(userId, noteId);
+
+                if (isDeleted)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note Deleted Successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note Not Found or Deletion Failed" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+        [HttpPut]
+        [Route("UpdateNote")]
+        public IActionResult UpdateNote(int noteId, UpdateModel updateModel)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+
+                var updatedNote = notesManager.UpdateNote(userId, noteId, updateModel);
+
+                if (updatedNote != null)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note updated successfully", Data = updatedNote });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found or user unauthorized" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+
+
+
+
     }
 }
