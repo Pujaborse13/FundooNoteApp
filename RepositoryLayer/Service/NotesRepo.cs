@@ -187,6 +187,46 @@ namespace RepositoryLayer.Service
         }
 
 
+        public bool AddColourInNote(int noteId, string colour, int userId)
+        {
+            NotesEntity notesEntity = context.Notes.FirstOrDefault(note => note.NoteId == noteId && note.UserId == userId);
+            if (notesEntity != null)
+            {
+                notesEntity.Color = colour;
+                context.SaveChanges();
+                return true;
+            }
+
+            else
+            {
+                return false;
+
+            }
+        }
+
+        public bool AddReminder(int noteId, int userId, DateTime reminder)
+        {
+            NotesEntity notesEntity = context.Notes.FirstOrDefault(note => note.NoteId == noteId && note.UserId == userId);
+
+            if (notesEntity != null)
+            {
+                notesEntity.Reminder = reminder;
+                context.SaveChanges();
+                return true;
+            }
+
+            return false;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 

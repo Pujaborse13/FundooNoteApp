@@ -80,6 +80,19 @@ namespace ManagerLayer.Service
         }
 
 
+        public bool AddColourInNote(int noteId, string colour, int userId)
+        {
+            return notesRepo.AddColourInNote(noteId, colour, userId);
+
+        }
+
+        public bool AddReminder(int noteId, int userId, DateTime reminder)
+        {
+            return notesRepo.AddReminder(noteId, userId, reminder);
+        }
+
+
+
 
 
 

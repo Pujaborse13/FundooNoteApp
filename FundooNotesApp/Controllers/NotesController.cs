@@ -262,6 +262,58 @@ namespace FundooNotesApp.Controllers
         }
 
 
+        [HttpPut]
+        [Route("AddColour")]
+        public IActionResult AddColourInNote(int noteId, string colour)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                bool result = notesManager.AddColourInNote(noteId, colour, userId);
+
+                if (result)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Colour added to Note successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found or unauthorized access" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+        [HttpPut]
+        [Route("AddReminder")]
+        public IActionResult AddReminder(int noteId, DateTime reminder)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+
+                bool result = notesManager.AddReminder(noteId, userId, reminder);
+
+                if (result)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Reminder added successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found or unauthorized access" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
 
 
 

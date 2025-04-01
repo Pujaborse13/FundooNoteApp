@@ -29,6 +29,11 @@ namespace ManagerLayer.Interface
         public int ArchiveNote(int noteId, int userId);
 
 
+        public bool AddColourInNote(int noteId, string colour, int userId);
+
+        public bool AddReminder(int noteId, int userId, DateTime reminder);
+
+
 
 
 
