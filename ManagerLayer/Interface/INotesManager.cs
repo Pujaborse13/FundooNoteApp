@@ -33,6 +33,8 @@ namespace ManagerLayer.Interface
 
         public bool AddReminder(int noteId, int userId, DateTime reminder);
 
+        public bool AddImage(int noteId, int userId, IFormFile Image);
+
 
 
 

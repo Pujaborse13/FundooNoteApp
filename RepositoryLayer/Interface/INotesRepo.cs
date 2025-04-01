@@ -38,6 +38,10 @@ namespace RepositoryLayer.Interface
         public bool AddColourInNote(int noteId, string colour, int userId);
 
         public bool AddReminder(int noteId, int userId, DateTime reminder);
+        public bool AddImage(int noteId, int userId, IFormFile Image);
+
+
+
 
 
 

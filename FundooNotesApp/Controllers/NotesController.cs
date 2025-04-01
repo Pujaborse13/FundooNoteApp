@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CommonLayer.Models;
 using ManagerLayer.Interface;
 using ManagerLayer.Service;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryLayer.Entity;
@@ -312,6 +313,36 @@ namespace FundooNotesApp.Controllers
                 throw ex;
             }
         }
+
+
+        [HttpPut]
+        [Route("AddImage")]
+        public IActionResult AddImage(int noteId, IFormFile Image)
+        {
+            try
+            {
+
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                bool result = notesManager.AddImage(noteId, userId, Image);
+                if (result)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Image added successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Fail to add Image" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
+
+
 
 
 

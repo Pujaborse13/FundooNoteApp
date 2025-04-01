@@ -92,6 +92,13 @@ namespace ManagerLayer.Service
         }
 
 
+        public bool AddImage(int noteId, int userId, IFormFile Image)
+        {
+            return notesRepo.AddImage(noteId, userId, Image);
+
+        }
+
+
 
 
 

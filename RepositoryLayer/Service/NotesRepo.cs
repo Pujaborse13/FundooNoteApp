@@ -219,6 +219,34 @@ namespace RepositoryLayer.Service
         }
 
 
+        public bool AddImage(int noteId, int userId, IFormFile Image)
+        {
+            NotesEntity notesEntity = context.Notes.ToList().Find(note => note.NoteId == noteId && note.UserId == userId);
+            if (notesEntity != null)
+            {
+                Account account = new Account(
+                configuration["CloudinarySettings:CloudName"],
+                configuration["Cloudinary Settings:ApiKey"],
+                configuration["CloudinarySettings:ApiSecret"]
+                );
+
+                Cloudinary cloudinary = new Cloudinary(account);
+                var UploadParameters = new ImageUploadParams()
+                {
+                    File = new FileDescription(Image.FileName, Image.OpenReadStream()),
+                };
+
+                var UploadResult = cloudinary.Upload(UploadParameters);
+                string ImagePath = UploadResult.Url.ToString();
+                notesEntity.Image = ImagePath;
+                context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 
@@ -226,28 +254,7 @@ namespace RepositoryLayer.Service
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
+    }  
 
 
 }
