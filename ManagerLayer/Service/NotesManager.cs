@@ -62,6 +62,27 @@ namespace ManagerLayer.Service
         }
 
 
+        public int PinNote(int notesId, int userId)
+        {
+            return notesRepo.PinNote(notesId, userId);
+
+        }
+
+        public int TrashNote(int noteId, int userId)
+        {
+            return notesRepo.TrashNote(noteId, userId);
+        }
+
+
+        public int ArchiveNote(int noteId, int userId)
+        {
+            return notesRepo.ArchiveNote(noteId, userId);
+        }
+
+
+
+
+
 
 
 

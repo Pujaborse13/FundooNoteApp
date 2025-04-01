@@ -161,6 +161,107 @@ namespace FundooNotesApp.Controllers
         }
 
 
+        [HttpPut]
+        [Route("PinNote")]
+        public IActionResult PinNote(int notesId)
+        {
+            try
+            {
+
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+
+
+                int result = notesManager.PinNote(notesId, userId);
+
+                if (result == 1)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note pin Successfully" });
+                }
+
+                else if (result == 2)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note unpin Successfully" });
+                }
+
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+
+        [HttpPut]
+        [Route("TrashNote")]
+        public IActionResult TrashNote(int notesId)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                int result = notesManager.TrashNote(notesId, userId);
+
+
+                if (result == 1)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note Trash Successfully" });
+                }
+
+                else if (result == 2)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note remove from  Trash Successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+
+        [HttpPut]
+        [Route("ArchiveNote")]
+        public IActionResult ArchiveNote(int notesId)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                int result = notesManager.ArchiveNote(notesId, userId);
+
+                if (result == 1)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note Archive Successfully" });
+                }
+
+                else if (result == 2)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Not unarchive Successfully" });
+                }
+
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note not found" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
 
 
 

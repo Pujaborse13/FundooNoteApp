@@ -22,6 +22,13 @@ namespace ManagerLayer.Interface
 
         public NotesEntity UpdateNote(int userId, int noteId, UpdateModel updateModel);
 
+        public int PinNote(int notesId, int userId);
+
+        public int TrashNote(int noteId, int userId);
+
+        public int ArchiveNote(int noteId, int userId);
+
+
 
 
 

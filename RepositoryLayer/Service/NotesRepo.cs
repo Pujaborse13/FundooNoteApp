@@ -105,6 +105,91 @@ namespace RepositoryLayer.Service
 
 
 
+        public int PinNote(int notesId, int userId)
+        {
+            NotesEntity notesEntity = context.Notes.FirstOrDefault(note => note.NoteId == notesId && note.UserId == userId);
+            if (notesEntity != null)
+            {
+                if (notesEntity.IsPin)
+                {
+                    notesEntity.IsPin = false;
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                {
+                    notesEntity.IsPin = true;
+                    context.SaveChanges();
+                    return 2;
+                }
+            }
+            else
+            {
+                return 3;
+            }
+
+        }
+
+
+        public int TrashNote(int noteId, int userId)
+        {
+            NotesEntity notesEntity = context.Notes.FirstOrDefault(note => note.NoteId == noteId && note.UserId == userId);
+
+            if (notesEntity != null)
+            {
+                if (notesEntity.IsTrash)
+                {
+                    notesEntity.IsTrash = false;
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                {
+                    notesEntity.IsTrash = true;
+                    context.SaveChanges();
+                    return 2;
+                }
+
+            }
+            else
+            {
+                return 3;
+
+            }
+        }
+
+
+
+        public int ArchiveNote(int noteId, int userId)
+        {
+            NotesEntity notesEntity = context.Notes.FirstOrDefault(note => note.NoteId == noteId && note.UserId == userId);
+
+            if (notesEntity != null)
+            {
+                if (notesEntity.IsArchive && notesEntity.IsPin == false)
+                {
+                    notesEntity.IsArchive = false;
+                    context.SaveChanges();
+                    return 1;
+                }
+                else
+                {
+                    notesEntity.IsTrash = true;
+                    context.SaveChanges();
+                    return 2;
+                }
+            }
+            else
+            {
+                return 3;
+            }
+
+        }
+
+
+
+
+
 
 
 
