@@ -73,3 +73,4 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NewId.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

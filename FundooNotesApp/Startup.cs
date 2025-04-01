@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -40,11 +41,17 @@ namespace FundooNotesApp
         {
             services.AddControllers();
             services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
+           
             services.AddTransient<IUserRepo , UserRepo>();
             services.AddTransient<IUserManager, UserManager>();
 
             services.AddTransient<INotesManager, NotesManager>();
             services.AddTransient<INotesRepo, NotesRepo>();
+
+            services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
+            services.AddTransient<ICollaboratorManager ,CollaboratorManager>();
+
+
 
             services.AddSwaggerGen(
                 option =>

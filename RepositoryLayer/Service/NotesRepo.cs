@@ -41,8 +41,6 @@ namespace RepositoryLayer.Service
             context.SaveChanges();
             return notesEntity;
 
-
-
         }
 
 
