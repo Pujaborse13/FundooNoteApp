@@ -20,7 +20,7 @@ namespace RepositoryLayer.Entity
         public int UserId { get; set; }
 
         [JsonIgnore]
-        public virtual UserEntity User { get; set; }
+        public virtual UserEntity NoteUser { get; set; }
 
         [ForeignKey("CollaborateNote")]
         public int NoteId {  get; set; }

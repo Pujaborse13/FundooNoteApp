@@ -32,6 +32,13 @@ namespace ManagerLayer.Service
         }
 
 
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId)
+        { 
+            return collaboratorRepo.GetAllCollaborators(NoteId, UserId);
+        
+        }
+
+
 
 
     }

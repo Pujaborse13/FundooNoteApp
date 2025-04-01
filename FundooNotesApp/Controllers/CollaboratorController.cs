@@ -6,6 +6,7 @@ using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryLayer.Entity;
+using System.Collections.Generic;
 
 namespace FundooNotesApp.Controllers
 {
@@ -48,6 +49,35 @@ namespace FundooNotesApp.Controllers
                 throw e;
             }
         }
+
+
+
+        //To Display all Collaborators
+        [HttpGet]
+        [Route("GetAllCollaborators")]
+        public IActionResult GetAllCollaborators(int NoteId)
+        {
+            try
+            {
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                var result = collaboratorManager.GetAllCollaborators(NoteId, UserId);
+
+                if (result != null)
+                {
+                    return Ok(new ResponseModel<List<CollaboratorEntity>> {Success = true, Message = "Getting All Collaborator successfully !",Data = result});
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<List<CollaboratorEntity>>{Success = true,Message = " Failed to Get All Collaborator!!!!!!",Data = result});
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
 
 
 

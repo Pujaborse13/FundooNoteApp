@@ -42,6 +42,16 @@ namespace RepositoryLayer.Service
 
 
 
+        //Get All Collaborator
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId)
+        {
+            List<CollaboratorEntity> collaborators = context.Collaborator.ToList();
+            return collaborators;
+        }
+
+        
+
+
 
 
 

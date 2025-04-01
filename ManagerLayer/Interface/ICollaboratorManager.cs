@@ -13,6 +13,10 @@ namespace ManagerLayer.Interface
         //Add collaborator to note
         public CollaboratorEntity AddCollaborator(int NoteId, int UserId, string Email);
 
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId);
+
+
+
 
 
 
