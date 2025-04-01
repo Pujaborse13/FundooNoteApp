@@ -15,6 +15,9 @@ namespace ManagerLayer.Interface
 
         public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId);
 
+        //Remove from Collaboration
+        public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId);
+
 
 
 

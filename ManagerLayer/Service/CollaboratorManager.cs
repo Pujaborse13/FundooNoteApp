@@ -38,6 +38,12 @@ namespace ManagerLayer.Service
         
         }
 
+        //Remove from Collaboration
+        public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId)
+        {
+            return collaboratorRepo.RemoveCollaborator(NoteId, UserId, CollaboratorId);
+        }
+
 
 
 

@@ -29,9 +29,5 @@ namespace RepositoryLayer.Entity
 
 
 
-
-
-
-
     }
 }

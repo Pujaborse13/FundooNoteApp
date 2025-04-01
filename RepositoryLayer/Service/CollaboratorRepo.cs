@@ -49,7 +49,23 @@ namespace RepositoryLayer.Service
             return collaborators;
         }
 
-        
+        //Remove from Collaboration
+        public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId)
+        {
+            var collaborator = context.Collaborator.FirstOrDefault(c => c.CollaboratorId == CollaboratorId && c.NoteId == NoteId);
+            if (collaborator != null)
+            {
+                context.Collaborator.Remove(collaborator);
+                context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
 
 
 

@@ -40,7 +40,7 @@ namespace FundooNotesApp.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<CollaboratorEntity>{Success = true,Message = "Adding Collaborator Failed !!!!!!",Data = result});
+                    return BadRequest(new ResponseModel<CollaboratorEntity>{Success = false,Message = "Adding Collaborator Failed !!!!!!",Data = result});
                 }
 
             }
@@ -68,7 +68,36 @@ namespace FundooNotesApp.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<List<CollaboratorEntity>>{Success = true,Message = " Failed to Get All Collaborator!!!!!!",Data = result});
+                    return BadRequest(new ResponseModel<List<CollaboratorEntity>>{Success = false,Message = " Failed to Get All Collaborator!!!!!!",Data = result});
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
+
+
+        //Remove from Collaboration
+        [HttpDelete]
+        [Route("RemoveCollaborator")]
+        public IActionResult RemoveCollaborator(int NoteId, [FromRoute] int CollaboratorId)
+        { 
+            try
+            {
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                var result = collaboratorManager.RemoveCollaborator(NoteId, UserId, CollaboratorId);
+
+                if (result)
+                {
+                    return Ok(new ResponseModel<bool>{Success = true,Message = "Removed Collaborator successfully !",Data = result});
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<bool>{Success = false,Message = "Failed to Remove userCollaborator !!!!!!",Data = result});
                 }
 
             }
