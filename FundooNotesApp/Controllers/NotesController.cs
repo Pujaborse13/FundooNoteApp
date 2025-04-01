@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Automatonymous.Binders;
 using CommonLayer.Models;
 using ManagerLayer.Interface;
 using ManagerLayer.Service;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Migrations;
 
@@ -15,7 +18,7 @@ namespace FundooNotesApp.Controllers
     {
         private readonly INotesManager notesManager;
         public NotesController(INotesManager notesManager)
-        { 
+        {
             this.notesManager = notesManager;
         }
 
@@ -36,7 +39,8 @@ namespace FundooNotesApp.Controllers
                 {
                     return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note Created Successfully", Data = notesEntity });
                 }
-                else { 
+                else
+                {
                     return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Failed to create note", Data = notesEntity });
 
                 }
@@ -45,7 +49,7 @@ namespace FundooNotesApp.Controllers
             {
                 throw ex;
             }
-               
+
         }
 
 
@@ -53,17 +57,17 @@ namespace FundooNotesApp.Controllers
         [Route("GetAllNotesById")]
         public IActionResult GetAllNotesById()
         {
-               int UserId = int.Parse(User.FindFirst("UserId").Value);
-                List<NotesEntity> notesList = notesManager.GetAllNotesByUserId(UserId);
+            int UserId = int.Parse(User.FindFirst("UserId").Value);
+            List<NotesEntity> notesList = notesManager.GetAllNotesByUserId(UserId);
 
-                if (notesList != null)
-                {
-                    return Ok(new { Success = true, Message = "Notes fetched successfully", Data = notesList });
-                }
-                else
-                {
-                    return NotFound(new { Success = false, Message = "No notes found" });
-                }
+            if (notesList != null)
+            {
+                return Ok(new { Success = true, Message = "Notes fetched successfully", Data = notesList });
+            }
+            else
+            {
+                return BadRequest(new { Success = false, Message = "No notes found" });
+            }
         }
 
 
@@ -79,7 +83,7 @@ namespace FundooNotesApp.Controllers
                 return Ok(new { Success = true, Message = "Notes Fetched Successfully.", Data = notes });
             }
             else
-            { 
+            {
                 return BadRequest(new { Success = false, Message = "Fail to Fetched Notes " });
             }
         }
@@ -90,7 +94,7 @@ namespace FundooNotesApp.Controllers
         {
             try
             {
-                int UserId = int.Parse(User.FindFirst("UserId").Value);  
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
                 int noteCount = notesManager.GetUserNotesCount(UserId);
 
                 if (noteCount > 0)
@@ -104,10 +108,66 @@ namespace FundooNotesApp.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Success = false, Message = "An error occurred.", Error = ex.Message });
+                throw ex;
             }
         }
 
 
+
+        [HttpDelete]
+        [Route("DeleteNote")]
+        public IActionResult DeleteNoteByUserIdAndNoteId(int noteId)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("UserId").Value);
+                bool isDeleted = notesManager.DeleteNoteByUserIdAndNoteId(userId, noteId);
+
+                if (isDeleted)
+                {
+                    return Ok(new ResponseModel<NotesEntity> { Success = true, Message = "Note Deleted Successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<NotesEntity> { Success = false, Message = "Note Not Found or Deletion Failed" });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+
+
+
+
+
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

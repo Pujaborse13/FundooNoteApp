@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using CommonLayer.Models;
+using Microsoft.AspNetCore.Http;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Service;
@@ -23,6 +24,21 @@ namespace RepositoryLayer.Interface
 
         //9.Return Count of notes a user has
         public int GetUserNotesCount(int userId);
+
+        public bool DeleteNoteByUserIdAndNoteId(int userId, int noteId);
+
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 

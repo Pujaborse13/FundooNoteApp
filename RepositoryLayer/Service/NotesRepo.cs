@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 using CommonLayer.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
@@ -12,30 +16,33 @@ namespace RepositoryLayer.Service
     public class NotesRepo : INotesRepo
     {
         private readonly FundooDBContext context;
+        private readonly IConfiguration configuration;
 
 
-        public NotesRepo(FundooDBContext context)
+        public NotesRepo(FundooDBContext context, IConfiguration configuration)
         {
-            this.context = context; ;
+            this.context = context; 
+            this.configuration = configuration;
+
 
         }
-         public NotesEntity CreateNote(int UserId, NotesModel notesModel)
+        public NotesEntity CreateNote(int UserId, NotesModel notesModel)
 
-        { 
+        {
             NotesEntity notesEntity = new NotesEntity();
             notesEntity.Title = notesModel.Title;
             notesEntity.Description = notesModel.Description;
             notesEntity.CreatedAt = DateTime.Now;
             notesEntity.tUpdatedAt = DateTime.Now;
 
-            
+
             notesEntity.UserId = UserId;
             context.Notes.Add(notesEntity);
             context.SaveChanges();
             return notesEntity;
 
-        
-        
+
+
         }
 
 
@@ -54,10 +61,59 @@ namespace RepositoryLayer.Service
 
 
         public int GetUserNotesCount(int userId)
-        { 
+        {
             return context.Notes.Count(note => note.UserId == userId);
-        
+
         }
 
+        public bool DeleteNoteByUserIdAndNoteId(int userId, int noteId)
+        {
+            var note = context.Notes.FirstOrDefault(n => n.UserId == userId && n.NoteId == noteId);
+
+            if (note != null)
+            {
+                context.Notes.Remove(note);
+                return true;
+            }
+            return false;
+        }
+
+
+
+
+
+
+
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
