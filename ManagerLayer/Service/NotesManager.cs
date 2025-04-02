@@ -91,12 +91,13 @@ namespace ManagerLayer.Service
             return notesRepo.AddReminder(noteId, userId, reminder);
         }
 
-
         public bool AddImage(int noteId, int userId, IFormFile Image)
         {
             return notesRepo.AddImage(noteId, userId, Image);
-
         }
+
+
+
 
 
 

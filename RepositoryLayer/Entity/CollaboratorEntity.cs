@@ -9,11 +9,9 @@ namespace RepositoryLayer.Entity
 {
     public class CollaboratorEntity
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CollaboratorId { get; set; }
-
         public string Email { get; set; }
 
         [ForeignKey("NoteUser")]

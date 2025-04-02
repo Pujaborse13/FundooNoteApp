@@ -32,18 +32,25 @@ namespace ManagerLayer.Service
         }
 
 
-        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId)
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId)
         { 
-            return collaboratorRepo.GetAllCollaborators(NoteId, UserId);
+            return collaboratorRepo.GetAllCollaborators(NoteId);
         
         }
 
         //Remove from Collaboration
+
+        public bool RemoveCollaborator(int CollaboratorId)
+        { 
+            return collaboratorRepo.RemoveCollaborator(CollaboratorId);
+        }
+
+       /*
         public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId)
         {
             return collaboratorRepo.RemoveCollaborator(NoteId, UserId, CollaboratorId);
         }
-
+        */
 
 
 

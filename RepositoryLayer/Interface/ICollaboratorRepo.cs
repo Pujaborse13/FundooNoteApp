@@ -12,13 +12,14 @@ namespace RepositoryLayer.Interface
         public CollaboratorEntity AddCollaborator(int NoteId, int UserId, string Email);
 
         //Get All Collaborator
-        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId);
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId);
 
-        //Remove from Collaboration
-        public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId);
+        //Remove from Collaboration By CollaboratorId
+        public bool RemoveCollaborator(int CollaboratorId);
 
 
-
+        //Remove from Collaboration By NoteID and Collaborator ID
+        //public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId);
 
 
 

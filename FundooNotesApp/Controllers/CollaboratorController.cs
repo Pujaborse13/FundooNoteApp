@@ -12,7 +12,7 @@ namespace FundooNotesApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CollaboratorController : Controller
+    public class CollaboratorController : ControllerBase
     {
         private readonly ICollaboratorManager collaboratorManager;
 
@@ -54,13 +54,13 @@ namespace FundooNotesApp.Controllers
 
         //To Display all Collaborators
         [HttpGet]
-        [Route("GetAllCollaborators")]
+        [Route("GetAllCollaborators/{NoteId}")]
         public IActionResult GetAllCollaborators(int NoteId)
         {
             try
             {
                 int UserId = int.Parse(User.FindFirst("UserId").Value);
-                var result = collaboratorManager.GetAllCollaborators(NoteId, UserId);
+                var result = collaboratorManager.GetAllCollaborators(NoteId);
 
                 if (result != null)
                 {
@@ -83,16 +83,49 @@ namespace FundooNotesApp.Controllers
 
         //Remove from Collaboration
         [HttpDelete]
-        [Route("RemoveCollaborator")]
-        public IActionResult RemoveCollaborator(int NoteId, [FromRoute] int CollaboratorId)
+        [Route("RemoveCollaboratorByCollaboratorID")]
+        public IActionResult DeleteCollabaorator(int CollaboratorID)
+        {
+            try
+            {
+                bool result = collaboratorManager.RemoveCollaborator(CollaboratorID);
+
+                if (result)
+                {
+                    return Ok(new ResponseModel<bool> { Success = true, Message = "Collaborator deleted Successfully", Data = result });
+
+                }
+
+                else
+                {
+                    return Ok(new ResponseModel<bool> { Success = false, Message = "failed to delete user from Collaborator", Data = result });
+
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+
+            }
+
+
+        }
+
+
+/*
+        [HttpDelete]
+        [Route("RemoveCollaboratorByNoteId")]
+        public IActionResult RemoveCollaborator(int NoteId,int CollaboratorId)
         { 
             try
             {
                 int UserId = int.Parse(User.FindFirst("UserId").Value);
-                var result = collaboratorManager.RemoveCollaborator(NoteId, UserId, CollaboratorId);
+                var result = collaboratorManager.RemoveCollaborator(NoteId,CollaboratorId);
 
                 if (result)
-                {
+                {   
                     return Ok(new ResponseModel<bool>{Success = true,Message = "Removed Collaborator successfully !",Data = result});
                 }
                 else
@@ -106,6 +139,7 @@ namespace FundooNotesApp.Controllers
                 throw e;
             }
         }
+        */
 
 
 

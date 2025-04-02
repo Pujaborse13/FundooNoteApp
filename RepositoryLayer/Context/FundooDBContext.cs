@@ -8,10 +8,18 @@ namespace RepositoryLayer.Context
 {
     public class FundooDBContext : DbContext
     {
+
         public FundooDBContext(DbContextOptions option) : base(option) { }
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<NotesEntity> Notes { get; set; }
         public DbSet<CollaboratorEntity> Collaborator { get; set; }
+
+
+
+
+
+
+
 
 
     }

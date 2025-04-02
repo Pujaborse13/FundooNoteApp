@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
+using RepositoryLayer.Migrations;
 
 namespace RepositoryLayer.Service
 {
@@ -43,12 +45,34 @@ namespace RepositoryLayer.Service
 
 
         //Get All Collaborator
-        public List<CollaboratorEntity> GetAllCollaborators(int NoteId, int UserId)
+        public List<CollaboratorEntity> GetAllCollaborators(int NoteId)
         {
-            List<CollaboratorEntity> collaborators = context.Collaborator.ToList();
+            List<CollaboratorEntity> collaborators = context.Collaborator.Where(c=> c.NoteId == NoteId).ToList();
             return collaborators;
+
         }
 
+
+        //Remove Collaborator id
+        public bool RemoveCollaborator(int CollaboratorId)
+        {
+            var CheckCollaboratorId = context.Collaborator.FirstOrDefault(n => n.CollaboratorId == CollaboratorId);
+
+            if (CheckCollaboratorId != null)
+            {
+                context.Collaborator.Remove(CheckCollaboratorId);
+                context.SaveChanges();
+                return true;
+            }
+            else { return false; 
+            }
+
+        }
+
+
+
+
+        /*
         //Remove from Collaboration
         public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId)
         {
@@ -65,7 +89,8 @@ namespace RepositoryLayer.Service
             }
 
         }
-
+        */
+        
 
 
 
