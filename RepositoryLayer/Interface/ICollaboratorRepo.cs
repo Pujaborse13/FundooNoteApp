@@ -18,6 +18,7 @@ namespace RepositoryLayer.Interface
         public bool RemoveCollaborator(int CollaboratorId);
 
 
+
         //Remove from Collaboration By NoteID and Collaborator ID
         //public bool RemoveCollaborator(int NoteId, int UserId, int CollaboratorId);
 

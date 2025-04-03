@@ -17,10 +17,26 @@ namespace ManagerLayer.Service
             this.labelRepo = labelRepo;
         }
 
-        public Task<LabelEntity> CreateLabelAsync(int userId, string labelName)
+        public async Task<LabelEntity> CreateLabelAsync(int userId, string labelName)
         {
-            return labelRepo.CreateLabelAsync(userId, labelName);
+            return await labelRepo.CreateLabelAsync(userId, labelName);
  
         }
+
+        public async Task<List<LabelEntity>> GetLabelAsync(int userId)
+        { 
+            return await labelRepo.GetLabelAsync(userId);
+        
+        }
+
+        public async Task<bool> AssignLabelToNoteAsync(int noteId, int labelId)
+        { 
+            return await labelRepo.AssignLabelToNoteAsync(noteId, labelId);
+        
+        }
+
+
+
+
     }
 }

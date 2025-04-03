@@ -9,6 +9,11 @@ namespace ManagerLayer.Interface
     public interface ILabelManager
     {
         public Task<LabelEntity> CreateLabelAsync(int userId, string labelName);
+        public Task<List<LabelEntity>> GetLabelAsync(int userId);
+        public Task<bool> AssignLabelToNoteAsync(int noteId, int labelId);
+
+
+
 
     }
 }

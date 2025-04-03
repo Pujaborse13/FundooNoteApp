@@ -10,6 +10,15 @@ namespace RepositoryLayer.Interface
     {
         public Task<LabelEntity> CreateLabelAsync(int userId, string labelName);
 
+        public Task<List<LabelEntity>> GetLabelAsync(int userId);
+
+        public Task<bool> AssignLabelToNoteAsync(int noteId, int labelId);
+
+        public Task<bool> RemoveLabelFromNoteAsync(int noteId, int labelId);
+
+
+
+
 
     }
 }
