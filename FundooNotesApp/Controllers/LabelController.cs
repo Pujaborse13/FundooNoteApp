@@ -92,16 +92,39 @@ namespace FundooNotesApp.Controllers
          }
 
 
+        [HttpDelete]
+        [Route("RemoveLabelFromNote")]
+        public async Task<IActionResult> RemoveLabelFromNoteAsync(int noteId, int labelId)
+        {
+            try
+            {
+                int userId = int.Parse(User.FindFirst("userId").Value);
+                var result = await labelManager.RemoveLabelFromNoteAsync(noteId, labelId);
+                if (result)
+                {
+                    return Ok(new ResponseModel<bool> { Success = true, Message = "label Remove successfully !", Data = result });
+
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<bool> { Success = false, Message = "fail to remove label ", Data = result });
+
+
+                }
 
 
 
+            }
 
+            catch (Exception ex)
+            {
+                throw ex;
 
-
-
-
-
-
+            }
         
+        }
+
+
+
     }
-}
+ }

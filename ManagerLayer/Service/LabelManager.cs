@@ -35,6 +35,14 @@ namespace ManagerLayer.Service
         
         }
 
+        public async Task<bool> RemoveLabelFromNoteAsync(int noteId, int labelId)
+        {
+            return await labelRepo.RemoveLabelFromNoteAsync(noteId,labelId);
+        
+        }
+
+
+
 
 
 
