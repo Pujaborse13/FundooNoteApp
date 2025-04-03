@@ -30,5 +30,11 @@ namespace RepositoryLayer.Entity
         [JsonIgnore]
         public virtual UserEntity NoteUser {  get; set; }
 
+        //for many to many realtion-- adding later while creating label
+        public ICollection<NoteLabelEntity> NoteLabel { get; set; } = new List<NoteLabelEntity>();
+
+
+
+
     }
 }

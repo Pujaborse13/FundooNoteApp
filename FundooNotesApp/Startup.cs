@@ -51,6 +51,10 @@ namespace FundooNotesApp
             services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
             services.AddTransient<ICollaboratorManager ,CollaboratorManager>();
 
+            services.AddTransient<ILabelRepo, LabelRepo>();
+            services.AddTransient<ILabelManager, LabelManager>();
+
+
 
 
             services.AddSwaggerGen(
