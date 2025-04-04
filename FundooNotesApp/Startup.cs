@@ -58,8 +58,21 @@ namespace FundooNotesApp
 
             //For Redis Cache
             services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
-            //for Swaager 
 
+
+            //Logger Session
+            services.AddDistributedMemoryCache();
+            services.AddSession(x =>
+            {
+                x.IdleTimeout = TimeSpan.FromMinutes(30);
+                x.Cookie.HttpOnly = true;
+                x.Cookie.IsEssential = true;
+            });
+
+
+
+
+            //for Swaager 
             services.AddSwaggerGen(
                 option =>
                 {
@@ -150,6 +163,7 @@ namespace FundooNotesApp
 
             app.UseHttpsRedirection();
             app.UseSwagger();
+            app.UseSession();
 
             // This middleware serves the Swagger documentation UI
             app.UseSwaggerUI(c =>

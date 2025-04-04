@@ -42,7 +42,24 @@ namespace FundooNotesApp.Controllers
         {
             try
             {
-                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                //int UserId = int.Parse(User.FindFirst("UserId").Value);
+                //int UserId = (int)HttpContext.Session.GetInt32("UserId");    //get session 
+
+                int? userIdNullable = HttpContext.Session.GetInt32("UserId");
+
+                if (userIdNullable == null)
+                {
+                    return Unauthorized(new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "User not logged in or session expired.",
+                        Data = null
+                    });
+                }
+
+                int UserId = userIdNullable.Value;
+
+
                 NotesEntity notesEntity = notesManager.CreateNote(UserId, notesModel);
 
                 if (notesEntity != null)

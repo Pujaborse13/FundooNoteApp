@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
+using RabbitMQ.Client.Impl;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Migrations;
 
@@ -22,21 +23,24 @@ namespace FundooNotesApp.Controllers
 
         private readonly IUserManager userManager;
         private readonly IBus bus;
+        private readonly ILogger<UsersController> logger;
 
-        public UsersController(IUserManager userManager, IBus bus)
+        public UsersController(IUserManager userManager, IBus bus, ILogger<UsersController> logger)
         {
             this.userManager = userManager;
             this.bus = bus;
-
+            this.logger = logger;
+            
         }
 
 
         //httplocal/api/Users/Reg
         [HttpPost]
-        [Route("Reg")]
+        [Route("RegisterUser")]
         public IActionResult Register(RegisterModel model)
         {
             var check = userManager.CheckEmail(model.Email);
+
             if (check)
             {
                 return BadRequest(new ResponseModel<UserEntity> { Success = false, Message = "Registration Fails " });
@@ -44,6 +48,10 @@ namespace FundooNotesApp.Controllers
 
             else {
                 var result = userManager.Register(model);
+               HttpContext.Session.SetInt32("UserId", result.UserId);     // set Session , logger
+              //  HttpContext.Session.GetInt32("UserId");                    // before using any user method
+
+
                 if (result != null)
                 {
                     return Ok(new ResponseModel<UserEntity> { Success = true, Message = "Register Successfully", Data = result });
@@ -141,6 +149,7 @@ namespace FundooNotesApp.Controllers
         [Route("GetAllUsers")]
         public IActionResult GetAllUsers()
         {
+           
             List<UserEntity> userList = userManager.GetAllUsers();
 
             if (userList != null)
@@ -160,16 +169,22 @@ namespace FundooNotesApp.Controllers
         [Route("GetUserByUserId")]
         public IActionResult GetUserByUserId(int userId)
         {
+            try
+            { 
+                UserEntity user = userManager.GetUserByUserId(userId);
 
-            UserEntity user = userManager.GetUserByUserId(userId);
+                if (user != null)
+                {
+                    return Ok(new { Success = true, Message = "User Found Successfully", Data = user });
+                }
+                return BadRequest(new { Success = false, Message = "User not Found" });
 
-            if (user != null)
-            {
-                return Ok(new { Success = true, Message = "User Found Successfully", Data = user });
 
             }
-            else {
-                return BadRequest(new { Success = false, Message = "User not Found" });
+            catch (Exception ex)
+            {
+                logger.LogError(ex.ToString());
+                throw ex;
 
             }
 

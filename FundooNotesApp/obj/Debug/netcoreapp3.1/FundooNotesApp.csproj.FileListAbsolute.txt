@@ -79,3 +79,7 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Pipelines
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NLog.config
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NLog.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
