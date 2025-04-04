@@ -51,11 +51,14 @@ namespace FundooNotesApp
             services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
             services.AddTransient<ICollaboratorManager ,CollaboratorManager>();
 
+            //For Label
             services.AddTransient<ILabelRepo, LabelRepo>();
             services.AddTransient<ILabelManager, LabelManager>();
 
 
-
+            //For Redis Cache
+            services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
+            //for Swaager 
 
             services.AddSwaggerGen(
                 option =>

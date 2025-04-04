@@ -74,3 +74,8 @@ D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\NewId.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\AcessMeditech\FundooNotesApp\FundooNotesApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
