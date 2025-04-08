@@ -17,9 +17,12 @@ namespace FundooNotesApp
         {
             var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
             NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run(); // starts the web application.
+
+
         }
 
+        //configuring the app’s host,
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>

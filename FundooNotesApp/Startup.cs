@@ -37,10 +37,13 @@ namespace FundooNotesApp
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services) //Registers services & dependencies
         {
+            //Enables controllers for API.
             services.AddControllers();
-            services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"]));
+
+            //Registers SQL Server database using a connection string.
+            services.AddDbContext<FundooDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DBConn"])); 
            
             services.AddTransient<IUserRepo , UserRepo>();
             services.AddTransient<IUserManager, UserManager>();
@@ -51,16 +54,21 @@ namespace FundooNotesApp
             services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
             services.AddTransient<ICollaboratorManager ,CollaboratorManager>();
 
+
             //For Label
             services.AddTransient<ILabelRepo, LabelRepo>();
             services.AddTransient<ILabelManager, LabelManager>();
 
+            services.AddTransient<ITimeZoneConvertorRepo,  TimeZoneConvertorRepo>();
+            services.AddTransient<ITimeZoneConvertorManager, TimeZoneConvertorManager>();
 
-            //For Redis Cache
+
+
+            //Redis Caching : Adds distributed caching using Redis (for improving performance)
             services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
 
 
-            //Logger Session
+            //Session Management : Enables server-side session state
             services.AddDistributedMemoryCache();
             services.AddSession(x =>
             {
@@ -72,7 +80,7 @@ namespace FundooNotesApp
 
 
 
-            //for Swaager 
+            //Swagger for API Documentation
             services.AddSwaggerGen(
                 option =>
                 {
@@ -99,15 +107,16 @@ namespace FundooNotesApp
                                 Id = "Bearer"
                             }
 
-                           },
+                          },
 
                         new string[]{ }
 
-                    }
-                 });
-        });
-                
-              
+                       }
+                    });
+             });
+
+
+            //MassTransit & RabbitMQ Setup
             services.AddMassTransit(x =>
             {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
@@ -121,10 +130,12 @@ namespace FundooNotesApp
                 }));
 
             });
+            
             services.AddMassTransitHostedService();
 
 
 
+            //JWT Authentication
             services.AddAuthentication(x =>
 
             {
@@ -148,7 +159,10 @@ namespace FundooNotesApp
 
                 };
             });
-           
+
+
+           services.AddHttpClient();
+
         }
 
 

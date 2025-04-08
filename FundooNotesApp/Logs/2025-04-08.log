@@ -1,0 +1,1084 @@
+2025-04-08 13:23:44.4579 DEBUG Hosting starting
+2025-04-08 13:23:45.0013 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 13:23:49.4185 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 13:23:49.8859 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 13:23:49.9450 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 13:23:51.0552 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 13:23:51.2064 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 13:23:51.4922 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 13:23:51.5234 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 13:23:51.5968 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 13:23:51.6731 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 13:23:51.7150 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 13:23:52.0897 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 13:23:53.6595 DEBUG Connect: guest@localhost:5672/
+2025-04-08 13:24:00.5432 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 56166)
+2025-04-08 13:24:01.6337 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 13:24:01.6910 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 13:24:01.9116 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 13:24:01.9809 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 13:24:01.9978 INFO Hosting environment: Development
+2025-04-08 13:24:02.0093 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 13:24:02.0093 DEBUG Hosting started
+2025-04-08 13:24:02.1068 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 13:24:07.5735 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 13:24:07.5735 TRACE All hosts are allowed.
+2025-04-08 13:24:13.3273 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:24:13.3872 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:24:13.4874 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 13:24:13.4926 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 13:24:18.8681 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 13:24:18.8681 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 13:24:18.8681 INFO Request finished in 16773.1575ms 200 text/html;charset=utf-8
+2025-04-08 13:24:27.3739 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 13:24:27.3739 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 13:24:27.4269 INFO Request finished in 52.0179ms 200 application/javascript; charset=utf-8
+2025-04-08 13:24:30.1999 INFO Request finished in 2827.5123ms 200 text/javascript; charset=UTF-8
+2025-04-08 13:24:30.5185 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 13:24:30.5603 TRACE All hosts are allowed.
+2025-04-08 13:24:30.6340 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:24:31.4382 INFO Request finished in 919.8742ms 200 application/json;charset=utf-8
+2025-04-08 13:27:16.2864 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=india&toZone=america&datetime=2024-04-08  
+2025-04-08 13:27:16.3870 TRACE All hosts are allowed.
+2025-04-08 13:27:16.4821 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:27:16.5442 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:27:16.6055 DEBUG The request path  does not match the path filter
+2025-04-08 13:27:17.1400 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:27:17.1400 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:27:17.1499 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:27:17.1499 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:27:17.1952 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2025-04-08 13:27:17.3506 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:27:17.3532 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:27:17.3532 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:27:17.3532 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:27:17.3532 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:27:17.3532 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:27:17.3719 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:27:17.3989 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:27:17.4286 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:27:17.4405 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:27:17.4405 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:27:17.4405 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:27:17.4440 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:27:17.4440 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:27:17.4663 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:27:17.4663 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:27:17.4663 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:27:17.4663 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:27:17.4757 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:27:17.4757 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:27:17.4757 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:27:17.4757 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:27:17.5048 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:27:17.5048 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:27:17.5048 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:27:17.5048 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:27:17.5081 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:27:17.5081 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:27:17.5081 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:27:17.5267 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:27:17.5267 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:27:17.5468 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (india, america, 08-04-2024 12.00.00 AM)
+2025-04-08 13:27:18.7451 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1191.4834ms.
+2025-04-08 13:27:18.7451 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:27:18.7451 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:27:18.7451 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:27:18.7578 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:27:18.7578 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:27:18.7578 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:27:18.7578 TRACE Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:27:18.7578 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:27:18.7771 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:27:18.7771 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:27:18.7771 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:27:18.7771 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-04-08 13:27:18.7771 INFO Executing ObjectResult, writing value of type 'System.String'.
+2025-04-08 13:27:18.8659 TRACE After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:27:18.8659 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:27:18.8659 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:27:18.8659 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 1502.7009ms
+2025-04-08 13:27:18.8659 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:27:18.9219 INFO Request finished in 2645.3228ms 400 text/plain; charset=utf-8
+2025-04-08 13:28:10.8994 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=India%20Standard%20Time&toZone=Eastern%20Standard%20Time&datetime=2024-04-08  
+2025-04-08 13:28:10.9850 TRACE All hosts are allowed.
+2025-04-08 13:28:11.0323 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:28:11.1026 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:28:11.1462 DEBUG The request path  does not match the path filter
+2025-04-08 13:28:11.1727 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:28:11.1859 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:28:11.2052 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:28:11.2052 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:28:11.2640 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:28:11.2640 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:28:11.2801 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:28:11.2801 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:28:11.2801 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:28:11.2801 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:28:11.2801 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:28:11.2884 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:28:11.3078 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:28:11.3078 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:28:11.3381 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:28:11.3381 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:28:11.3381 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:28:11.3381 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:28:11.3511 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:28:11.3511 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:28:11.3511 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:28:11.3511 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:28:11.3664 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:28:11.3664 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:28:11.3664 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:28:11.3664 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:28:11.3664 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:28:11.3664 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:28:11.3664 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:28:11.3664 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:28:11.3664 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:28:11.3664 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:28:11.3860 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:28:11.3860 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:28:11.3860 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:28:11.4034 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (India Standard Time, Eastern Standard Time, 08-04-2024 12.00.00 AM)
+2025-04-08 13:28:11.4888 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 82.1752ms.
+2025-04-08 13:28:11.4888 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:28:11.4888 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:28:11.4888 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:28:11.4910 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:28:11.4910 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:28:11.4910 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:28:11.4910 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:28:11.4910 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:28:11.4910 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:28:11.4910 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:28:11.4910 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:28:11.4910 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 13:28:11.4910 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType4`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 13:28:11.5724 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:28:11.5724 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:28:11.5724 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:28:11.5945 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 309.9823ms
+2025-04-08 13:28:11.5945 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:28:11.6425 INFO Request finished in 753.3472ms 200 application/json; charset=utf-8
+2025-04-08 13:30:02.8834 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=India%20Standard%20Time&toZone=Eastern%20European%20Time%20%28EET%29%2C%20Egypt&datetime=2024-04-08  
+2025-04-08 13:30:02.9612 TRACE All hosts are allowed.
+2025-04-08 13:30:03.0256 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:30:03.0949 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:30:03.1295 DEBUG The request path  does not match the path filter
+2025-04-08 13:30:03.1389 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:30:03.1389 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:30:03.1558 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:30:03.1558 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:30:03.2260 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:30:03.2260 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:30:03.2260 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:30:03.2260 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:30:03.2260 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:30:03.2260 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:30:03.2260 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:30:03.2655 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:30:03.2789 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:30:03.2789 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:30:03.2880 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:30:03.2880 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:30:03.2880 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:30:03.2880 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:30:03.2880 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:30:03.2880 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:30:03.3051 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:30:03.3051 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:30:03.3051 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:30:03.3051 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:30:03.3051 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:30:03.3051 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (India Standard Time, Eastern European Time (EET), Egypt, 08-04-2024 12.00.00 AM)
+2025-04-08 13:30:03.9872 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 669.6727ms.
+2025-04-08 13:30:03.9914 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:30:03.9914 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:30:03.9914 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:30:03.9914 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:30:03.9914 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:30:03.9914 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:30:04.0078 TRACE Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:30:04.0078 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:30:04.0078 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:30:04.0078 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:30:04.0078 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:30:04.0078 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-04-08 13:30:04.0078 INFO Executing ObjectResult, writing value of type 'System.String'.
+2025-04-08 13:30:04.0303 TRACE After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:30:04.0442 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:30:04.0442 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:30:04.0442 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 811.1617ms
+2025-04-08 13:30:04.0442 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:30:04.1334 INFO Request finished in 1271.6223ms 400 text/plain; charset=utf-8
+2025-04-08 13:31:44.1097 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=India%20Standard%20Time&toZone=Central%20Europe%20Standard%20Time&datetime=2024-04-08  
+2025-04-08 13:31:44.2655 TRACE All hosts are allowed.
+2025-04-08 13:31:44.3279 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:31:44.3936 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:31:44.4585 DEBUG The request path  does not match the path filter
+2025-04-08 13:31:44.4747 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:31:44.4805 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:31:44.4926 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:31:44.4926 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:31:44.5734 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:31:44.5941 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:31:44.5941 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:31:44.6041 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:31:44.6041 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:31:44.6041 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:31:44.6041 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:31:44.6041 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:31:44.6253 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:31:44.6253 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:31:44.6253 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:31:44.6253 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:31:44.6253 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:31:44.6253 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:31:44.6324 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:31:44.6324 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:31:44.6324 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:31:44.6324 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:31:44.6324 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:31:44.6324 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:31:44.6324 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:31:44.6324 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:31:44.6324 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:31:44.6324 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:31:44.6324 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:31:44.6324 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:31:44.6324 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:31:44.6324 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:31:44.6324 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:31:44.6324 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:31:44.6324 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:31:44.6324 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (India Standard Time, Central Europe Standard Time, 08-04-2024 12.00.00 AM)
+2025-04-08 13:31:44.6641 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.3844ms.
+2025-04-08 13:31:44.6641 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:31:44.6641 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:31:44.6654 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:31:44.6654 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:31:44.6654 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:31:44.6654 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:31:44.6654 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:31:44.6654 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:31:44.6654 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:31:44.6654 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:31:44.6654 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:31:44.6654 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 13:31:44.6654 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType4`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 13:31:44.7111 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:31:44.7144 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:31:44.7144 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:31:44.7611 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 107.1038ms
+2025-04-08 13:31:44.7611 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:31:44.8587 INFO Request finished in 779.6506ms 200 application/json; charset=utf-8
+2025-04-08 13:32:11.9614 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=Eastern%20Standard%20Time&toZone=Central%20Europe%20Standard%20Time&datetime=2024-04-08  
+2025-04-08 13:32:12.0060 TRACE All hosts are allowed.
+2025-04-08 13:32:12.0060 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:32:12.0089 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:32:12.0089 DEBUG The request path  does not match the path filter
+2025-04-08 13:32:12.0089 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:32:12.0089 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:32:12.0089 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:32:12.0089 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:32:12.0089 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:32:12.0089 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:32:12.0089 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:32:12.0230 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:32:12.0230 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:32:12.0230 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:32:12.0230 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:32:12.0230 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:32:12.0230 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:32:12.0380 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:32:12.0380 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:32:12.0380 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:32:12.0380 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:32:12.0380 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:32:12.0380 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:32:12.0380 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:32:12.0553 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:32:12.0553 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:32:12.0553 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (Eastern Standard Time, Central Europe Standard Time, 08-04-2024 12.00.00 AM)
+2025-04-08 13:32:12.0553 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6835ms.
+2025-04-08 13:32:12.0553 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:32:12.0553 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:32:12.0553 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:32:12.0553 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:32:12.0553 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:32:12.0553 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:32:12.0696 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:32:12.0696 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:32:12.0696 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:32:12.0696 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 13:32:12.0696 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType4`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 13:32:12.0696 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:32:12.0696 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:32:12.0873 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:32:12.0873 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 62.3727ms
+2025-04-08 13:32:12.0873 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:32:12.1102 INFO Request finished in 148.8621ms 200 application/json; charset=utf-8
+2025-04-08 13:36:44.1897 DEBUG Hosting starting
+2025-04-08 13:36:45.2146 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 13:36:47.4220 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 13:36:47.4877 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 13:36:47.5584 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 13:36:47.7515 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 13:36:47.7774 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 13:36:47.7774 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 13:36:47.7902 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 13:36:47.7902 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 13:36:47.8049 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 13:36:47.8049 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 13:36:47.8226 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 13:36:48.1439 DEBUG Connect: guest@localhost:5672/
+2025-04-08 13:36:49.9048 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 56402)
+2025-04-08 13:36:50.6420 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 13:36:50.6420 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 13:36:50.6420 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 13:36:50.6516 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 13:36:50.6516 INFO Hosting environment: Development
+2025-04-08 13:36:50.7217 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 13:36:50.7272 DEBUG Hosting started
+2025-04-08 13:36:51.0010 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 13:36:51.5548 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 13:36:51.5548 TRACE All hosts are allowed.
+2025-04-08 13:36:51.8745 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:36:51.9927 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:36:52.2851 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 13:36:52.3204 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 13:36:52.7223 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 13:36:52.7223 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 13:36:52.7863 INFO Request finished in 54.9207ms 200 application/javascript; charset=utf-8
+2025-04-08 13:36:53.8210 INFO Request finished in 1096.2327ms 200 text/javascript; charset=UTF-8
+2025-04-08 13:36:54.5531 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 13:36:54.5531 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 13:36:54.5620 INFO Request finished in 3623.2684ms 200 text/html;charset=utf-8
+2025-04-08 13:36:54.9290 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 13:36:54.9290 TRACE All hosts are allowed.
+2025-04-08 13:36:54.9453 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:36:55.6643 INFO Request finished in 735.3898ms 200 application/json;charset=utf-8
+2025-04-08 13:38:33.9933 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=Atlantic%20Standard%20Time%20&toZone=New%20Zealand%20Time&datetime=2025-08-02  
+2025-04-08 13:38:34.1406 TRACE All hosts are allowed.
+2025-04-08 13:38:34.4176 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:38:34.5306 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:38:34.6071 DEBUG The request path  does not match the path filter
+2025-04-08 13:38:35.2133 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:38:35.2133 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:38:35.2275 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:38:35.2496 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:38:35.2929 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2025-04-08 13:38:35.4919 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:38:35.4919 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:38:35.4919 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:38:35.4919 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:38:35.5104 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:38:35.5104 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:38:35.5104 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:38:35.5595 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:38:35.5832 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:38:35.5938 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:38:35.5938 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:38:35.5938 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:38:35.5938 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:38:35.6062 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:38:35.6062 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:38:35.6062 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:38:35.6062 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:38:35.6062 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:38:35.6062 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:38:35.6062 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:38:35.6062 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:38:35.6062 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:38:35.6280 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:38:35.6280 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:38:35.6280 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:38:35.6280 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:38:35.6333 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:38:35.6333 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:38:35.6333 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:38:35.6333 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:38:35.6502 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:38:35.6654 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (Atlantic Standard Time , New Zealand Time, 02-08-2025 12.00.00 AM)
+2025-04-08 13:38:36.2952 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 622.1967ms.
+2025-04-08 13:38:36.2952 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:38:36.3044 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:38:36.3044 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:38:36.3044 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:38:36.3044 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:38:36.3044 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:38:36.3044 TRACE Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:38:36.3361 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:38:36.3361 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:38:36.3361 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:38:36.3361 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:38:36.3361 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-04-08 13:38:36.3361 INFO Executing ObjectResult, writing value of type 'System.String'.
+2025-04-08 13:38:36.3709 TRACE After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:38:36.3709 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:38:36.3709 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:38:36.3709 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 860.4938ms
+2025-04-08 13:38:36.3709 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:38:36.5164 INFO Request finished in 2556.8199ms 400 text/plain; charset=utf-8
+2025-04-08 13:40:10.7974 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=Atlantic%20Standard%20Time%20&toZone=New%20Zealand%20Standard%20Time&datetime=2025-08-02  
+2025-04-08 13:40:10.9332 TRACE All hosts are allowed.
+2025-04-08 13:40:10.9966 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:40:11.0676 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:40:11.1144 DEBUG The request path  does not match the path filter
+2025-04-08 13:40:11.1530 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:40:11.1893 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:40:11.1893 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:11.1993 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:11.2423 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:40:11.2423 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:40:11.2423 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:40:11.2423 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:40:11.2423 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:40:11.2423 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:40:11.2423 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:40:11.2423 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:40:11.2763 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:40:11.2763 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:40:11.2763 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:40:11.2763 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:40:11.2763 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:40:11.2942 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:11.2942 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:11.2942 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:40:11.2942 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:11.2942 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:11.2942 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:11.2942 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:11.2942 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:11.2942 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:40:11.3048 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (Atlantic Standard Time , New Zealand Standard Time, 02-08-2025 12.00.00 AM)
+2025-04-08 13:40:11.7027 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 395.5662ms.
+2025-04-08 13:40:11.7027 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:11.7027 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:11.7027 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:11.7027 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:11.7027 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:11.7027 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:11.7027 TRACE Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:40:11.7155 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:40:11.7155 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:40:11.7155 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:40:11.7155 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:40:11.7155 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-04-08 13:40:11.7155 INFO Executing ObjectResult, writing value of type 'System.String'.
+2025-04-08 13:40:11.7322 TRACE After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2025-04-08 13:40:11.7322 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:11.7322 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:11.7322 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 484.0252ms
+2025-04-08 13:40:11.7322 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:11.7920 INFO Request finished in 1044.6825ms 400 text/plain; charset=utf-8
+2025-04-08 13:40:54.2631 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=Atlantic%20Standard%20Time&toZone=New%20Zealand%20Standard%20Time&datetime=2025-08-02  
+2025-04-08 13:40:54.2631 TRACE All hosts are allowed.
+2025-04-08 13:40:54.2631 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:40:54.2732 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:40:54.2732 DEBUG The request path  does not match the path filter
+2025-04-08 13:40:54.2732 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:40:54.2732 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:40:54.2732 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:54.2732 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:54.2732 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:40:54.2732 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:40:54.2732 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:40:54.2732 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:40:54.2732 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:40:54.2732 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:40:54.2732 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:40:54.3359 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:40:54.3359 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:40:54.3359 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:40:54.3359 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:54.3359 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:54.3359 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:40:54.3505 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:40:54.3505 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:54.3505 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:54.3505 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:54.3505 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:54.3505 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:40:54.3505 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (Atlantic Standard Time, New Zealand Standard Time, 02-08-2025 12.00.00 AM)
+2025-04-08 13:40:54.4100 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.869ms.
+2025-04-08 13:40:54.4100 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:54.4100 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:40:54.4100 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:54.4100 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:40:54.4100 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:54.4133 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:54.4133 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:40:54.4133 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:40:54.4133 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:40:54.4133 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:40:54.4133 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:40:54.4133 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 13:40:54.4133 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType4`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 13:40:54.4829 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:40:54.4945 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:54.4945 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:40:54.4945 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 209.9211ms
+2025-04-08 13:40:54.4945 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:40:54.5219 INFO Request finished in 259.5305ms 200 application/json; charset=utf-8
+2025-04-08 13:47:21.5812 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/timezone/convert?fromZone=Afghanistan%20Standard%20Time&toZone=Arabic%20Standard%20Time&datetime=2025-08-02  
+2025-04-08 13:47:21.6816 TRACE All hosts are allowed.
+2025-04-08 13:47:21.7590 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 13:47:21.8234 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 13:47:21.8865 DEBUG The request path  does not match the path filter
+2025-04-08 13:47:21.9035 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:47:21.9035 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/timezone/convert' is valid for the request path '/api/TimeZoneConvertor/timezone/convert'
+2025-04-08 13:47:21.9204 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:47:21.9388 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:47:21.9915 INFO Route matched with {action = "ConvertTime", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTime(System.String, System.String, System.DateTime) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 13:47:21.9961 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 13:47:21.9961 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 13:47:21.9961 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 13:47:21.9961 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 13:47:21.9961 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 13:47:21.9961 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:47:21.9961 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 13:47:22.0166 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:47:22.0224 DEBUG Attempting to bind parameter 'fromZone' of type 'System.String' using the name 'fromZone' in request data ...
+2025-04-08 13:47:22.0224 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Done attempting to bind parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Attempting to validate the bound parameter 'fromZone' of type 'System.String' ...
+2025-04-08 13:47:22.0224 DEBUG Done attempting to validate the bound parameter 'fromZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:47:22.0224 DEBUG Attempting to bind parameter 'toZone' of type 'System.String' using the name 'toZone' in request data ...
+2025-04-08 13:47:22.0224 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Done attempting to bind parameter 'toZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Attempting to validate the bound parameter 'toZone' of type 'System.String' ...
+2025-04-08 13:47:22.0224 DEBUG Done attempting to validate the bound parameter 'toZone' of type 'System.String'.
+2025-04-08 13:47:22.0224 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:47:22.0224 DEBUG Attempting to bind parameter 'datetime' of type 'System.DateTime' using the name 'datetime' in request data ...
+2025-04-08 13:47:22.0416 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:47:22.0416 DEBUG Done attempting to bind parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:47:22.0416 DEBUG Attempting to validate the bound parameter 'datetime' of type 'System.DateTime' ...
+2025-04-08 13:47:22.0416 DEBUG Done attempting to validate the bound parameter 'datetime' of type 'System.DateTime'.
+2025-04-08 13:47:22.0416 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:47:22.0416 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:47:22.0416 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:47:22.0416 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:47:22.0416 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) - Validation state: Valid
+2025-04-08 13:47:22.0416 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) with arguments (Afghanistan Standard Time, Arabic Standard Time, 02-08-2025 12.00.00 AM)
+2025-04-08 13:47:22.0721 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.7855ms.
+2025-04-08 13:47:22.0721 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:47:22.0721 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 13:47:22.0721 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:47:22.0721 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 13:47:22.0721 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:47:22.0721 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:47:22.0721 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:47:22.0721 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 13:47:22.0847 DEBUG No information found on request to perform content negotiation.
+2025-04-08 13:47:22.0847 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 13:47:22.0847 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 13:47:22.0847 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 13:47:22.0847 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType4`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 13:47:22.1871 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 13:47:22.1871 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:47:22.1871 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 13:47:22.1871 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp) in 190.8295ms
+2025-04-08 13:47:22.1871 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTime (FundooNotesApp)'
+2025-04-08 13:47:22.2483 INFO Request finished in 674.4387ms 200 application/json; charset=utf-8
+2025-04-08 14:32:45.4684 DEBUG Hosting starting
+2025-04-08 14:32:45.9176 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 14:32:47.2139 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 14:32:47.3076 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 14:32:47.3307 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 14:32:47.5959 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 14:32:47.6002 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 14:32:47.6002 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 14:32:47.6002 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 14:32:47.6179 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 14:32:47.6179 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 14:32:47.6179 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 14:32:47.6179 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 14:32:47.7127 DEBUG Connect: guest@localhost:5672/
+2025-04-08 14:32:48.3478 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 57234)
+2025-04-08 14:32:49.1068 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 14:32:49.1436 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 14:32:49.1481 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 14:32:49.1812 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 14:32:49.2096 INFO Hosting environment: Development
+2025-04-08 14:32:49.2102 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 14:32:49.2102 DEBUG Hosting started
+2025-04-08 14:32:49.2775 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 14:32:49.4172 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 14:32:49.4172 TRACE All hosts are allowed.
+2025-04-08 14:32:49.5976 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 14:32:49.6264 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 14:32:49.6895 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 14:32:49.6895 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 14:32:50.6471 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 14:32:50.6494 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 14:32:50.6494 INFO Request finished in 1385.84ms 200 text/html;charset=utf-8
+2025-04-08 14:32:51.8614 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 14:32:51.8723 INFO Request finished in 10.9054ms 200 application/javascript; charset=utf-8
+2025-04-08 14:32:52.1012 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 14:32:52.2924 INFO Request finished in 191.3746ms 200 text/javascript; charset=UTF-8
+2025-04-08 14:32:53.9949 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 14:32:53.9949 TRACE All hosts are allowed.
+2025-04-08 14:32:53.9949 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 14:32:54.2777 INFO Request finished in 282.8781ms 200 application/json;charset=utf-8
+2025-04-08 14:33:28.8833 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/TimeZoneConvertor/ConvertTimeZoneUsing?AnotherZone=Central%20Europe%20Standard%20Time  
+2025-04-08 14:33:29.0945 TRACE All hosts are allowed.
+2025-04-08 14:33:29.4165 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 14:33:29.5006 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 14:33:29.6007 DEBUG The request path  does not match the path filter
+2025-04-08 14:33:30.4628 DEBUG 1 candidate(s) found for the request path '/api/TimeZoneConvertor/ConvertTimeZoneUsing'
+2025-04-08 14:33:30.4628 DEBUG Endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp)' with route pattern 'api/TimeZoneConvertor/ConvertTimeZoneUsing' is valid for the request path '/api/TimeZoneConvertor/ConvertTimeZoneUsing'
+2025-04-08 14:33:30.4811 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp)'
+2025-04-08 14:33:30.5117 INFO Executing endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp)'
+2025-04-08 14:33:30.5467 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2025-04-08 14:33:30.7956 INFO Route matched with {action = "ConvertTimeZone", controller = "TimeZoneConvertor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConvertTimeZone(System.String) on controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp).
+2025-04-08 14:33:30.7956 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 14:33:30.8154 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 14:33:30.8154 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 14:33:30.8322 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 14:33:30.8413 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 14:33:30.8547 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 14:33:30.9254 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.TimeZoneConvertorController (FundooNotesApp)
+2025-04-08 14:33:31.0089 DEBUG Attempting to bind parameter 'AnotherZone' of type 'System.String' ...
+2025-04-08 14:33:31.0238 DEBUG Attempting to bind parameter 'AnotherZone' of type 'System.String' using the name 'AnotherZone' in request data ...
+2025-04-08 14:33:31.0238 DEBUG Done attempting to bind parameter 'AnotherZone' of type 'System.String'.
+2025-04-08 14:33:31.0238 DEBUG Done attempting to bind parameter 'AnotherZone' of type 'System.String'.
+2025-04-08 14:33:31.0238 DEBUG Attempting to validate the bound parameter 'AnotherZone' of type 'System.String' ...
+2025-04-08 14:33:31.0403 DEBUG Done attempting to validate the bound parameter 'AnotherZone' of type 'System.String'.
+2025-04-08 14:33:31.0403 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 14:33:31.0403 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 14:33:31.0544 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 14:33:31.0544 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 14:33:31.0786 INFO Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp) - Validation state: Valid
+2025-04-08 14:33:31.0786 TRACE Executing action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp) with arguments (Central Europe Standard Time)
+2025-04-08 14:33:31.1551 INFO Executed action method FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 65.4901ms.
+2025-04-08 14:33:31.1551 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 14:33:31.1551 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 14:33:31.1551 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 14:33:31.1551 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 14:33:31.1551 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 14:33:31.1551 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 14:33:31.1551 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 14:33:31.1662 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 14:33:31.1662 DEBUG No information found on request to perform content negotiation.
+2025-04-08 14:33:31.1662 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 14:33:31.1662 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 14:33:31.1662 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 14:33:31.1662 INFO Executing ObjectResult, writing value of type 'CommonLayer.Models.ResponseModel`1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 14:33:31.2411 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 14:33:31.2436 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 14:33:31.2436 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 14:33:31.2611 INFO Executed action FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp) in 404.1047ms
+2025-04-08 14:33:31.2611 INFO Executed endpoint 'FundooNotesApp.Controllers.TimeZoneConvertorController.ConvertTimeZone (FundooNotesApp)'
+2025-04-08 14:33:31.3495 INFO Request finished in 2504.7181ms 200 application/json; charset=utf-8
+2025-04-08 15:31:04.7605 DEBUG Hosting starting
+2025-04-08 15:31:05.3805 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 15:31:08.5351 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 15:31:08.6056 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 15:31:08.6934 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 15:31:08.9788 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:31:09.0512 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 15:31:09.0605 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:31:09.1206 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 15:31:09.1862 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 15:31:09.2058 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 15:31:09.2058 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 15:31:09.2447 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 15:31:09.5682 DEBUG Connect: guest@localhost:5672/
+2025-04-08 15:31:11.3106 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 57815)
+2025-04-08 15:31:12.3447 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 15:31:12.3447 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 15:31:12.3447 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 15:31:12.3631 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 15:31:12.4190 INFO Hosting environment: Development
+2025-04-08 15:31:12.4190 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 15:31:12.4467 DEBUG Hosting started
+2025-04-08 15:31:12.5863 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 15:31:13.2478 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 15:31:13.2478 TRACE All hosts are allowed.
+2025-04-08 15:31:13.7153 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:31:13.8195 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:31:14.2333 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 15:31:14.2587 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 15:31:14.6983 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 15:31:14.6984 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 15:31:14.8516 INFO Request finished in 147.4222ms 200 application/javascript; charset=utf-8
+2025-04-08 15:31:15.6640 INFO Request finished in 965.558ms 200 text/javascript; charset=UTF-8
+2025-04-08 15:31:16.2142 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 15:31:16.2142 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 15:31:16.2142 INFO Request finished in 3648.5667ms 200 text/html;charset=utf-8
+2025-04-08 15:31:16.3465 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 15:31:16.3465 TRACE All hosts are allowed.
+2025-04-08 15:31:16.3465 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:31:16.8710 ERROR An unhandled exception has occurred while executing the request.
+2025-04-08 15:31:17.1973 INFO Request finished in 850.7781ms 500 text/plain
+2025-04-08 15:38:04.3403 DEBUG Hosting starting
+2025-04-08 15:38:05.1640 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 15:38:08.0511 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 15:38:08.0983 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 15:38:08.1374 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 15:38:08.3355 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:38:08.4738 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 15:38:08.5085 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:38:08.5342 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 15:38:08.5430 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 15:38:08.5430 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 15:38:08.5430 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 15:38:08.6997 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 15:38:09.1744 DEBUG Connect: guest@localhost:5672/
+2025-04-08 15:38:11.1152 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 57964)
+2025-04-08 15:38:12.2334 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 15:38:12.2334 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 15:38:12.2334 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 15:38:12.2489 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 15:38:12.3093 INFO Hosting environment: Development
+2025-04-08 15:38:12.3093 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 15:38:12.3093 DEBUG Hosting started
+2025-04-08 15:38:12.4761 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 15:38:13.3305 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 15:38:13.3305 TRACE All hosts are allowed.
+2025-04-08 15:38:13.7787 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:38:13.9380 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:38:14.2521 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 15:38:14.2711 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 15:38:14.7204 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 15:38:14.7204 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 15:38:15.0286 INFO Request finished in 298.986ms 200 application/javascript; charset=utf-8
+2025-04-08 15:38:15.4005 INFO Request finished in 693.7615ms 200 text/javascript; charset=UTF-8
+2025-04-08 15:38:15.8753 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 15:38:15.8753 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 15:38:15.8753 INFO Request finished in 3412.0555ms 200 text/html;charset=utf-8
+2025-04-08 15:38:15.9963 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 15:38:15.9963 TRACE All hosts are allowed.
+2025-04-08 15:38:15.9963 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:38:16.4530 ERROR An unhandled exception has occurred while executing the request.
+2025-04-08 15:38:16.8101 INFO Request finished in 813.8598ms 500 text/plain
+2025-04-08 15:42:34.1348 DEBUG Hosting starting
+2025-04-08 15:42:34.8668 INFO User profile is available. Using 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-08 15:42:37.8768 DEBUG Reading data from file 'C:\Users\pujab\AppData\Local\ASP.NET\DataProtection-Keys\key-abc73b39-aa03-49ed-8c82-83198adb2744.xml'.
+2025-04-08 15:42:37.9690 DEBUG Found key {abc73b39-aa03-49ed-8c82-83198adb2744}.
+2025-04-08 15:42:38.0436 DEBUG Considering key {abc73b39-aa03-49ed-8c82-83198adb2744} with expiration date 2025-06-25 11:46:58Z as default key.
+2025-04-08 15:42:38.2694 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:42:38.3085 DEBUG Decrypting secret element using Windows DPAPI.
+2025-04-08 15:42:38.3085 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-04-08 15:42:38.3266 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-04-08 15:42:38.3378 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-04-08 15:42:38.3574 DEBUG Using key {abc73b39-aa03-49ed-8c82-83198adb2744} as the default key.
+2025-04-08 15:42:38.3574 DEBUG Key ring with default key {abc73b39-aa03-49ed-8c82-83198adb2744} was loaded during application startup.
+2025-04-08 15:42:38.3931 DEBUG Starting host: rabbitmq://localhost/
+2025-04-08 15:42:38.7816 DEBUG Connect: guest@localhost:5672/
+2025-04-08 15:42:43.2755 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 58042)
+2025-04-08 15:42:43.8609 DEBUG Loaded hosting startup assembly FundooNotesApp
+2025-04-08 15:42:43.8609 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-04-08 15:42:43.8609 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-04-08 15:42:43.8609 INFO Application started. Press Ctrl+C to shut down.
+2025-04-08 15:42:43.8609 INFO Hosting environment: Development
+2025-04-08 15:42:43.8664 INFO Content root path: D:\AcessMeditech\FundooNotesApp\FundooNotesApp
+2025-04-08 15:42:43.8664 DEBUG Hosting started
+2025-04-08 15:42:44.0851 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/index.html  
+2025-04-08 15:42:44.5857 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-04-08 15:42:44.5857 TRACE All hosts are allowed.
+2025-04-08 15:42:44.8283 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:42:44.8871 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:42:45.0759 DEBUG Response markup is scheduled to include Browser Link script injection.
+2025-04-08 15:42:45.0759 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-04-08 15:42:45.8907 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2025-04-08 15:42:45.8907 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2025-04-08 15:42:45.9529 INFO Request finished in 56.9709ms 200 application/javascript; charset=utf-8
+2025-04-08 15:42:46.5494 INFO Request finished in 658.2821ms 200 text/javascript; charset=UTF-8
+2025-04-08 15:42:47.7090 DEBUG Response markup was updated to include Browser Link script injection.
+2025-04-08 15:42:47.7169 DEBUG Response markup was updated to include browser refresh script injection.
+2025-04-08 15:42:47.7260 INFO Request finished in 3647.0773ms 200 text/html;charset=utf-8
+2025-04-08 15:42:47.8906 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2025-04-08 15:42:47.9506 TRACE All hosts are allowed.
+2025-04-08 15:42:47.9621 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:42:48.8057 INFO Request finished in 917.2945ms 200 application/json;charset=utf-8
+2025-04-08 15:43:39.6180 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Weather/GetWeatherData?city=pune  
+2025-04-08 15:43:48.6976 TRACE All hosts are allowed.
+2025-04-08 15:43:49.0048 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:43:49.2281 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:43:49.3966 DEBUG The request path  does not match the path filter
+2025-04-08 15:43:50.3146 DEBUG 1 candidate(s) found for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:43:50.3369 DEBUG Endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)' with route pattern 'api/Weather/GetWeatherData' is valid for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:43:50.3520 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:43:50.4023 INFO Executing endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:43:50.4496 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2025-04-08 15:43:50.9824 INFO Route matched with {action = "GetWeatherData", controller = "Weather"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWeatherData(System.String) on controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp).
+2025-04-08 15:43:50.9824 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 15:43:50.9931 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 15:43:50.9931 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 15:43:50.9931 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 15:43:50.9931 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 15:43:51.0135 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:43:51.0306 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:43:51.1139 DEBUG Attempting to bind parameter 'city' of type 'System.String' ...
+2025-04-08 15:43:51.1483 DEBUG Attempting to bind parameter 'city' of type 'System.String' using the name 'city' in request data ...
+2025-04-08 15:43:51.1483 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:43:51.1483 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:43:51.1483 DEBUG Attempting to validate the bound parameter 'city' of type 'System.String' ...
+2025-04-08 15:43:51.1796 DEBUG Done attempting to validate the bound parameter 'city' of type 'System.String'.
+2025-04-08 15:43:51.1882 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:43:51.1882 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:43:51.1882 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:43:51.1882 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:43:51.2049 INFO Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) - Validation state: Valid
+2025-04-08 15:43:51.2049 TRACE Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) with arguments (pune)
+2025-04-08 15:43:51.3556 INFO Start processing HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=pune&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:43:51.3719 TRACE Request Headers:
+
+2025-04-08 15:43:51.4500 INFO Sending HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=pune&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:43:51.4500 TRACE Request Headers:
+
+2025-04-08 15:43:52.9628 INFO Received HTTP response after 1498.9406ms - OK
+2025-04-08 15:43:53.0227 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:13:26 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=pune&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 487
+
+2025-04-08 15:43:53.0506 INFO End processing HTTP request after 1753.9406ms - OK
+2025-04-08 15:43:53.0506 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:13:26 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=pune&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 487
+
+2025-04-08 15:43:53.1731 INFO Executed action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1947.8791ms.
+2025-04-08 15:43:53.1794 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:43:53.1794 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:43:53.1794 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:43:53.1963 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:43:53.2133 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:43:53.3080 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:43:53.4062 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:43:53.4699 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 15:43:53.4971 DEBUG No information found on request to perform content negotiation.
+2025-04-08 15:43:53.5097 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 15:43:53.5097 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 15:43:53.5372 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 15:43:53.5463 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType5`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 15:43:53.6068 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:43:53.6068 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:43:53.6068 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:43:53.6290 INFO Executed action FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) in 2607.702ms
+2025-04-08 15:43:53.6337 INFO Executed endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:43:53.7028 INFO Request finished in 14191.5219ms 200 application/json; charset=utf-8
+2025-04-08 15:44:21.3009 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Weather/GetWeatherData?city=panvel  
+2025-04-08 15:44:21.3270 TRACE All hosts are allowed.
+2025-04-08 15:44:21.3270 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:44:21.3352 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:44:21.3352 DEBUG The request path  does not match the path filter
+2025-04-08 15:44:21.3617 DEBUG 1 candidate(s) found for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:44:21.3617 DEBUG Endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)' with route pattern 'api/Weather/GetWeatherData' is valid for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:44:21.3617 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:21.3617 INFO Executing endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:21.3679 INFO Route matched with {action = "GetWeatherData", controller = "Weather"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWeatherData(System.String) on controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp).
+2025-04-08 15:44:21.3679 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 15:44:21.3679 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 15:44:21.3679 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 15:44:21.3679 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 15:44:21.4167 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 15:44:21.4167 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:44:21.4167 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:44:21.4167 DEBUG Attempting to bind parameter 'city' of type 'System.String' ...
+2025-04-08 15:44:21.4167 DEBUG Attempting to bind parameter 'city' of type 'System.String' using the name 'city' in request data ...
+2025-04-08 15:44:21.4292 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:44:21.4292 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:44:21.4292 DEBUG Attempting to validate the bound parameter 'city' of type 'System.String' ...
+2025-04-08 15:44:21.4292 DEBUG Done attempting to validate the bound parameter 'city' of type 'System.String'.
+2025-04-08 15:44:21.4292 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:21.4292 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:21.4292 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:21.4292 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:21.4292 INFO Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) - Validation state: Valid
+2025-04-08 15:44:21.4292 TRACE Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) with arguments (panvel)
+2025-04-08 15:44:21.4292 INFO Start processing HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=panvel&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:44:21.4292 TRACE Request Headers:
+
+2025-04-08 15:44:21.4486 INFO Sending HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=panvel&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:44:21.4486 TRACE Request Headers:
+
+2025-04-08 15:44:21.7801 INFO Received HTTP response after 331.1643ms - OK
+2025-04-08 15:44:21.7801 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:13:55 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=panvel&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 485
+
+2025-04-08 15:44:22.0316 INFO End processing HTTP request after 593.5073ms - OK
+2025-04-08 15:44:22.0625 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:13:55 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=panvel&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 485
+
+2025-04-08 15:44:22.4519 INFO Executed action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1014.4405ms.
+2025-04-08 15:44:22.4519 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:22.4519 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:22.4519 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:22.4626 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:22.4626 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:22.4626 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:22.4626 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:44:22.4626 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 15:44:22.4772 DEBUG No information found on request to perform content negotiation.
+2025-04-08 15:44:22.4772 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 15:44:22.4772 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 15:44:22.4772 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 15:44:22.4772 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType5`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 15:44:22.4987 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:44:22.4987 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:22.5199 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:22.5199 INFO Executed action FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) in 1104.4774ms
+2025-04-08 15:44:22.5231 INFO Executed endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:22.5547 INFO Request finished in 1257.674ms 200 application/json; charset=utf-8
+2025-04-08 15:44:43.1578 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Weather/GetWeatherData?city=darjiling  
+2025-04-08 15:44:43.1578 TRACE All hosts are allowed.
+2025-04-08 15:44:43.1869 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2025-04-08 15:44:43.1869 TRACE Performing protect operation to key {abc73b39-aa03-49ed-8c82-83198adb2744} with purposes ('D:\AcessMeditech\FundooNotesApp\FundooNotesApp', 'SessionMiddleware').
+2025-04-08 15:44:43.1969 DEBUG The request path  does not match the path filter
+2025-04-08 15:44:43.1969 DEBUG 1 candidate(s) found for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:44:43.1969 DEBUG Endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)' with route pattern 'api/Weather/GetWeatherData' is valid for the request path '/api/Weather/GetWeatherData'
+2025-04-08 15:44:43.1969 DEBUG Request matched endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:43.1969 INFO Executing endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:43.1969 INFO Route matched with {action = "GetWeatherData", controller = "Weather"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWeatherData(System.String) on controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp).
+2025-04-08 15:44:43.1969 DEBUG Execution plan of authorization filters (in the following order): None
+2025-04-08 15:44:43.1969 DEBUG Execution plan of resource filters (in the following order): None
+2025-04-08 15:44:43.2102 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-04-08 15:44:43.2102 DEBUG Execution plan of exception filters (in the following order): None
+2025-04-08 15:44:43.2102 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-04-08 15:44:43.2102 DEBUG Executing controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:44:43.2102 DEBUG Executed controller factory for controller FundooNotesApp.Controllers.WeatherController (FundooNotesApp)
+2025-04-08 15:44:43.2102 DEBUG Attempting to bind parameter 'city' of type 'System.String' ...
+2025-04-08 15:44:43.2102 DEBUG Attempting to bind parameter 'city' of type 'System.String' using the name 'city' in request data ...
+2025-04-08 15:44:43.2102 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:44:43.2102 DEBUG Done attempting to bind parameter 'city' of type 'System.String'.
+2025-04-08 15:44:43.2102 DEBUG Attempting to validate the bound parameter 'city' of type 'System.String' ...
+2025-04-08 15:44:43.2102 DEBUG Done attempting to validate the bound parameter 'city' of type 'System.String'.
+2025-04-08 15:44:43.2260 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:43.2260 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:43.2260 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:43.2260 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:43.2260 INFO Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) - Validation state: Valid
+2025-04-08 15:44:43.2260 TRACE Executing action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) with arguments (darjiling)
+2025-04-08 15:44:43.2260 INFO Start processing HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=darjiling&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:44:43.2260 TRACE Request Headers:
+
+2025-04-08 15:44:43.2260 INFO Sending HTTP request GET https://api.openweathermap.org/data/2.5/weather?q=darjiling&appid=bb4f4cdbf0d8e3f4d2d8c963aab10557&units=metric
+2025-04-08 15:44:43.2260 TRACE Request Headers:
+
+2025-04-08 15:44:43.2734 INFO Received HTTP response after 28.5571ms - OK
+2025-04-08 15:44:43.2757 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:14:16 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=darjiling&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 501
+
+2025-04-08 15:44:43.2981 INFO End processing HTTP request after 63.7521ms - OK
+2025-04-08 15:44:43.2981 TRACE Response Headers:
+Server: openresty
+Date: Tue, 08 Apr 2025 10:14:16 GMT
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=darjiling&units=metric
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+Content-Type: application/json; charset=utf-8
+Content-Length: 501
+
+2025-04-08 15:44:43.3227 INFO Executed action method FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 89.4987ms.
+2025-04-08 15:44:43.3227 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:43.3465 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-04-08 15:44:43.3569 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:43.3681 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-04-08 15:44:43.3914 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:43.4081 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:43.4368 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:44:43.4590 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-04-08 15:44:43.4590 DEBUG No information found on request to perform content negotiation.
+2025-04-08 15:44:43.4652 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-08 15:44:43.4652 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-08 15:44:43.4792 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-08 15:44:43.4792 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType5`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-08 15:44:43.5074 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-04-08 15:44:43.5259 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:43.5427 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-04-08 15:44:43.6461 INFO Executed action FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp) in 433.23ms
+2025-04-08 15:44:43.6654 INFO Executed endpoint 'FundooNotesApp.Controllers.WeatherController.GetWeatherData (FundooNotesApp)'
+2025-04-08 15:44:43.7518 INFO Request finished in 595.7913ms 200 application/json; charset=utf-8
+2025-04-08 15:45:52.2114 DEBUG HttpMessageHandler expired after 120000ms for client ''
+2025-04-08 15:46:02.4222 DEBUG Starting HttpMessageHandler cleanup cycle with 1 items
+2025-04-08 15:46:02.5289 DEBUG Ending HttpMessageHandler cleanup cycle after 49.7522ms - processed: 1 items - remaining: 0 items
